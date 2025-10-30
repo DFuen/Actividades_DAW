@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO9</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>PERSONAS EN EL PARO</h1>
+    <div class="perfil-container">
+    <button class="btnPerfil1" type="button"
+        onclick="
+        this.classList.toggle('cambiada1');
+        if(this.classList.contains('cambiada1')) {
+            this.nextElementSibling.innerHTML = sandkill1.toString();
+        } else {
+            this.nextElementSibling.innerHTML = '';
+        }
+      ">
+    </button>
+    <div></div>
+    </div>
+
+    <div class="perfil-container">
+        <button class="btnPerfil2" type="button"
+            onclick="
+            this.classList.toggle('cambiada2');
+            if(this.classList.contains('cambiada2')) {
+                this.nextElementSibling.innerHTML = sandkill2.toString();
+            } else {
+                this.nextElementSibling.innerHTML = '';
+            }
+        ">
+        </button>
+        <div></div>
+    </div>
+
+    <div class="perfil-container">
+        <button class="btnPerfil3" type="button"
+            onclick="
+                this.classList.toggle('cambiada3');
+                if(this.classList.contains('cambiada3')) {
+                    this.nextElementSibling.innerHTML = salida();
+                } else {
+                    this.nextElementSibling.innerHTML = '';
+                }
+            ">
+        </button>
+        <div></div>
+    </div>
+    <div class="perfil-container">
+        <button type="button"
+            onclick="this.nextElementSibling.innerHTML = cambios();">HACER CAMBIOS</button>
+        <div></div>
+    </div>
+
+</body>
+</html>

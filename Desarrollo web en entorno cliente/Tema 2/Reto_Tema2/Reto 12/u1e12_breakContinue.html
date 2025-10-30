@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicio 12 - break y continue</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 15px; }
+    h1 { color: #2b6cb0; }
+    section { margin-bottom: 30px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    button {
+      background-color: #2b6cb0;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #2c5282;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejercicio 12 - break y continue</h1>
+
+  <section>
+    <h2>Números del 1 al 100 excluyendo múltiplos de 3</h2>
+    <button id="mostrarNum1">Mostrar (bucle for con continue)</button>
+    <button id="mostrarNum2">Mostrar (bucle while con if)</button>
+    <ul id="listaNumeros"></ul>
+  </section>
+
+  <section>
+    <h2>Meses del año excluyendo meses de verano</h2>
+    <button id="mostrarMes1">Mostrar (bucle for)</button>
+    <button id="mostrarMes2">Mostrar (bucle for...of con continue)</button>
+    <ul id="listaMeses"></ul>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

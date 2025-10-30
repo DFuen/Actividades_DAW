@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicio 8 - Juego: Adivina el Malware</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; color:#222; }
+    h1 { color:#2b6cb0; }
+    .card { border: 1px solid #ddd; padding: 18px; border-radius: 8px; background:#fbfbff; }
+    .question { font-size: 1.1rem; margin-bottom: 12px; }
+    .btn { padding: 10px 16px; margin-right: 8px; border-radius: 6px; border: none; cursor: pointer; }
+    .btn-yes { background:#38a169; color:white; }
+    .btn-no { background:#e53e3e; color:white; }
+    .btn-reset { background:#4a5568; color:white; margin-top:12px; }
+    .status { margin-top:12px; color:#555; }
+    .result { margin-top:18px; padding:12px; border-radius:6px; background:#f0f9ff; border:1px solid #cfe8ff; }
+    small { color:#666; }
+    .explain { margin-top:10px; color:#333; }
+  </style>
+</head>
+<body>
+  <h1>Juego: Adivina el malware</h1>
+  <p>Responde a las 3 preguntas (Sí / No) para que el sistema adivine qué tipo de malware podría ser.</p>
+
+  <div class="card" id="game">
+    <div class="question" id="questionText">Pulsa <strong>Comenzar</strong> para iniciar el juego.</div>
+
+    <div id="controls">
+      <button class="btn btn-yes" id="btnYes" style="display:none">Sí</button>
+      <button class="btn btn-no" id="btnNo" style="display:none">No</button>
+      <button class="btn" id="btnStart">Comenzar</button>
+      <button class="btn btn-reset" id="btnReset" style="display:none">Reiniciar</button>
+    </div>
+
+    <div class="status" id="progress" aria-live="polite"></div>
+
+    <div id="resultArea" style="display:none" class="result">
+      <strong>Resultado:</strong>
+      <div id="resultText"></div>
+      <div class="explain" id="explanation"></div>
+    </div>
+
+    <div style="margin-top:10px"><small>Ejemplos enunciados: Gusano, Bug, Troyano, Spam, Exploit.</small></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juego de Trivial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 15px;
+      text-align: center;
+    }
+    h1 {
+      color: #2b6cb0;
+    }
+    .pregunta {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .opciones {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .opciones button {
+      margin: 6px 0;
+      padding: 10px 15px;
+      width: 100%;
+      max-width: 300px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid #2b6cb0;
+      background-color: white;
+      transition: background-color 0.3s ease;
+    }
+    .opciones button:hover {
+      background-color: #2b6cb0;
+      color: white;
+    }
+    #resultado {
+      margin-top: 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Juego de Trivial</h1>
+  <div id="contenido">
+    <div id="categoria"></div>
+    <div class="pregunta" id="pregunta"></div>
+    <div class="opciones" id="opciones"></div>
+  </div>
+  <div id="resultado"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

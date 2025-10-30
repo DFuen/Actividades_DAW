@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE DWEC</title>
+    <script src="main.js"></script>
+</head>
+<style>
+    td{
+        border: solid 1px black;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <h1>Verificación de sudoku</h1>
+    <table>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <Script>
+        var linea0=[5,9,6,
+                    2,7,1,
+                    3,8,4];
+        
+        var linea1=[2,3,7,
+                    4,6,8,
+                    5,9,1];
+
+        var linea2=[1,4,8,
+                    5,3,9,
+                    2,6,7];
+
+        var linea3=[6,1,9,
+                    4,3,7,
+                    8,2,5];
+
+        var linea4=[7,5,2,
+                    1,8,6,
+                    9,4,3];
+                    
+        var linea5=[4,8,3,
+                    9,2,5,
+                    6,7,1];
+
+        var linea6=[7,4,2,
+                    1,6,8,
+                    9,5,3];
+                    
+        var linea7=[8,1,5,
+                    3,2,9,
+                    6,7,4];
+        
+        var linea8=[3,9,6,
+                    7,5,4,
+                    8,1,2];
+       
+
+        var sudokuJugador=[linea0,linea1,linea2,linea3,linea4,linea5,linea6,linea7,linea8]
+
+        esSudokuCorrecto(sudokuJugador)
+
+    </Script>
+</body>
+</html>

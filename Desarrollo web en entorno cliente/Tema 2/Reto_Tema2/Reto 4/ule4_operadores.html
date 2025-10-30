@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function mostrarMensaje() {
+      var a, b, c, d, eTexto;
+      a = 3;
+      b = 5;
+      c = true;
+      d = false;
+      eTexto = '1';
+      alert('VERDADERO' + (a+b == 8 && a-b != 1));
+      alert('FALSO: ' + (a+b == 8 && a-b ==-1));
+      alert('VERDADERO: ' + (c != d));
+      alert('FALSO: ' + (c == d));
+      alert('FALSO: ' + (!a));
+      alert('FALSO: ' + (eTexto != 1));
+      alert('FALSO: ' + (eTexto != 1 && eTexto != "Zapato"));
+      alert('VERDADERO: ' + ('Zapato' != 'avellano'));
+    }
+    mostrarMensaje();
+  </script>
+</head>
+<body>
+</body>
+</html>

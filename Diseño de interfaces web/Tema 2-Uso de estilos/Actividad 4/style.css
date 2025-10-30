@@ -1,0 +1,81 @@
+body{
+    background-color: grey;
+    z-index: 0;
+    margin: 0%;
+}
+.contenedor_1{
+    width: 75vw;
+    height: 75vh;
+    margin-left: 12%;
+    margin-top: 3%;
+    z-index: 1;
+}
+/*SUBCONTENEDORES*/
+
+.contenedor_1_1{
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+    float: left;
+}
+
+.contenedor_1_2{/*GRIS*/
+    background-color: rgb(75, 74, 74);
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+    float: left;
+}
+
+.sub-contenedor_1{/*AMARILLO*/
+    background-color: rgba(223, 223, 110, 0.568);
+    width: 65vw;
+    height: 60vh;
+    z-index: 3;
+    float: left;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.sub-contenedor_2{/*AZUL*/
+    background-color: rgba(79, 187, 230, 0.514);
+    width: 12vw;
+    height: 75vh;
+    position: absolute;
+    margin-left: 63%;
+    z-index: 20;
+}
+.sub-contenedor_3{/*hover*/
+    border: 1px solid black;
+    background-color: rgb(224, 47, 47);
+    width: 6vw;
+    height: 4vh;
+    position: absolute;
+    z-index: 20;
+    margin-top: 1.5%;
+    margin-left: 55%;
+    text-align: center;
+    align-content: center;
+    color:white;
+    text-transform: uppercase;
+}
+.sub-contenedor_4{/*CUADRO ROSA*/
+    background-color: rgba(224, 62, 224, 0.452);
+    width: 7vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 6%;
+    z-index: 20;
+    border: 3px dashed rgba(224, 62, 224);
+}
+.contenedor_3{/*borde oscuro debajo*/
+    background-color: black;
+    width: 100vw;
+    padding: 2%;
+    float: left;
+    z-index: 0;
+    border: 1px solid black;
+    margin-top: 4.5%;
+}

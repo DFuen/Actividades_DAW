@@ -1,0 +1,41 @@
+body{
+    background-color: grey;
+    margin: 0%;
+}
+.contenedor_1{
+    background-color: white;
+    float: left;
+    margin: 2%;
+}
+div .siz{
+    width: 25vw;
+    height: 25vh;
+    margin: 2%;
+    float: left;
+}
+/*SUBCONTENEDORES*/
+#sub-contenedor_1{
+    background-color: rgb(125, 162, 211);
+}
+#sub-contenedor_2{
+    background-color: rgb(183, 139, 224);
+}
+#sub-contenedor_3{
+    background-color: rgb(202, 98, 98);
+    width: 25vw;
+    height: 55vh;
+    margin: 2%;
+    float: left;
+}
+#sub-contenedor_4{
+    background-color: rgb(223, 179, 115);
+}
+#sub-contenedor_5{
+    background-color: rgb(89, 228, 198);
+}
+#sub-contenedor_6{
+    background-color: rgb(212, 183, 50);
+}
+#sub-contenedor_7{
+    background-color: rgb(211, 101, 152);
+}

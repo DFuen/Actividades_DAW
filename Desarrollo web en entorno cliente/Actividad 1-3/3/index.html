@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Alquiler de Películas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    pre {
+      background: white;
+      padding: 1em;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      white-space: pre-wrap;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎥 Sistema de Alquiler de Películas</h1>
+
+  <div style="text-align:center;">
+    <button onclick="mostrarPeliculasDirector()">Películas de Nolan</button>
+    <button onclick="alquilar()">Alquilar 'Inception'</button>
+    <button onclick="devolver()">Devolver 'Inception'</button>
+    <button onclick="mostrarPopulares()">Más Populares</button>
+    <button onclick="eliminarTitanic()">Eliminar Titanic</button>
+  </div>
+
+  <h2>📋 Resultados:</h2>
+  <pre id="output"></pre>
+
+  <script src="peliculas.js"></script>
+</body>
+</html>

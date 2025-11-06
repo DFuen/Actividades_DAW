@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+</head>
+<body>
+    <div th:if="${Lista==null}">
+        <p>No hay post</p>
+    </div>
+    <div th:each="post : ${Lista}">
+        <h2 th:text="${post.titulo}">Titulo</h2>
+        <p th:text="${post.contenido}">Contenido</p>
+    </div>
+</body>
+</html>

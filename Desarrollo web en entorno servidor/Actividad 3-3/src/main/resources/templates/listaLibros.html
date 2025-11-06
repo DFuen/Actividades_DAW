@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ListaLibros</title>
+</head>
+<body>
+    <h2>Biblioteca</h2>
+    <table border="1">
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Acción</th>
+        </tr>
+        <tr th:each="libro : ${libros}">
+            <td th:text="${libro.titulo}"></td>
+            <td th:text="${libro.autor}"></td>
+            <td><a th:href="@{/editar/{id}(id=${libro.id})}">Editar</a></td>
+        </tr>
+    </table>
+</body>
+</html>

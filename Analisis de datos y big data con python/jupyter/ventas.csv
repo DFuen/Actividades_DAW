@@ -1,0 +1,31 @@
+id,fecha,producto,categoria,unidades,precio_unitario,importe,tienda,vendedor
+1,2024-01-02,Portátil HP,Informática,1,799.00,799.00,Sevilla,Ana
+2,2024-01-02,Ratón Logitech,Accesorios,3,25.00,75.00,Cádiz,Luis
+3,2024-01-03,Monitor Samsung,Imagen,2,210.00,420.00,Sevilla,Ana
+4,2024-01-03,Impresora Epson,Oficina,1,140.00,140.00,Málaga,Carmen
+5,2024-01-04,Altavoces JBL,Sonido,2,90.00,180.00,Cádiz,Luis
+6,2024-01-05,Teclado HP,Accesorios,4,35.00,140.00,Granada,Raúl
+7,2024-01-06,Router TP-Link,Redes,1,65.00,65.00,Sevilla,Ana
+8,2024-01-06,Tablet Lenovo,Informática,1,270.00,270.00,Málaga,Carmen
+9,2024-01-07,Disco Duro 1TB,Almacenamiento,2,60.00,120.00,Granada,Raúl
+10,2024-01-07,USB 64GB,Accesorios,5,10.00,50.00,Cádiz,Luis
+11,2024-01-08,Cámara Canon,Imagen,1,480.00,480.00,Sevilla,Ana
+12,2024-01-08,Altavoces Logitech,Sonido,1,85.00,85.00,Granada,Raúl
+13,2024-01-09,Monitor LG,Imagen,3,190.00,570.00,Sevilla,Ana
+14,2024-01-09,Impresora HP,Oficina,2,130.00,260.00,Córdoba,Laura
+15,2024-01-10,Portátil Asus,Informática,1,750.00,750.00,Granada,Raúl
+16,2024-01-10,Tablet Samsung,Informática,2,310.00,620.00,Cádiz,Luis
+17,2024-01-11,Disco SSD 512GB,Almacenamiento,2,85.00,170.00,Sevilla,Ana
+18,2024-01-11,Router ASUS,Redes,1,120.00,120.00,Málaga,Carmen
+19,2024-01-12,Teclado mecánico,Accesorios,2,55.00,110.00,Córdoba,Laura
+20,2024-01-12,Smartwatch Garmin,Wearables,1,190.00,190.00,Granada,Raúl
+21,2024-01-13,Altavoces Bose,Sonido,1,230.00,230.00,Sevilla,Ana
+22,2024-01-13,Monitor Philips,Imagen,1,175.00,175.00,Cádiz,Luis
+23,2024-01-14,Tablet Huawei,Informática,1,295.00,295.00,Málaga,Carmen
+24,2024-01-14,Impresora Brother,Oficina,1,150.00,150.00,Córdoba,Laura
+25,2024-01-15,Ratón Genius,Accesorios,4,18.00,72.00,Granada,Raúl
+26,2024-01-15,Portátil Acer,Informática,1,699.00,699.00,Cádiz,Luis
+27,2024-01-16,Cámara Sony,Imagen,1,520.00,520.00,Sevilla,Ana
+28,2024-01-16,USB 128GB,Accesorios,3,15.00,45.00,Granada,Raúl
+29,2024-01-17,Altavoces Sony,Sonido,2,150.00,300.00,Córdoba,Laura
+30,2024-01-17,Router TP-Link,Redes,2,60.00,120.00,Cádiz,Luis

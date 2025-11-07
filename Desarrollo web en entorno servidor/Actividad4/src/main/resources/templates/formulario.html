@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form th:action="@{/guardar}" th:object="${p}" method="post">
+
+        <Label>Titulo</Label>
+        <input type="text" th:field="*{titulo}"/>
+
+        <label>Contenido</label>
+        <textarea th:field="*{contenido}"></textarea>
+
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+</html>

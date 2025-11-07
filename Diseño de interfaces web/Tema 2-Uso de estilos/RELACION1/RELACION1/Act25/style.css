@@ -1,0 +1,8 @@
+button:hover{
+    background-color: blue;
+    transition: 0.5s;
+    /*solo dando la transicion a este se hará en los dos*/
+}
+button:active{
+    background-color: green;
+}

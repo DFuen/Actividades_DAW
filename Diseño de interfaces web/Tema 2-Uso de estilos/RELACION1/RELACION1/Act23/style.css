@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    width: 15%;
+    height: 3em;
+    text-align: center;
+}
+.final>td{
+    font-weight: bold;
+}
+.resaltado{
+    background-color: yellow;
+    color:red;
+    font-weight: bold;
+}
+col:nth-child(2){background-color: aqua;}
+col:nth-child(3){background-color: violet;}
+col:nth-child(4){background-color: lawngreen;}
+col:nth-child(5){background-color: peru;}
+col:nth-child(6){background-color: khaki;}

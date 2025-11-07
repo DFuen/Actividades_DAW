@@ -1,0 +1,12 @@
+div{
+    background-image:
+        repeating-linear-gradient(0deg,#999 0 30px,#222 30px 60px),
+        repeating-linear-gradient(90deg,rgba(0,0,0,0.05)0 30px,transparent 30px 60px);
+    background-blend-mode: multiply;
+    border: 1px solid black;
+    border-radius: 15px;
+    color:#ffffffE6;
+    height: 20em;
+    width: 17em;
+    text-align: center;
+}

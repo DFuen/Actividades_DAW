@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+label{white-space: nowrap;}/*LO BUSQUE PARA QUE NO SE PARTIERA EL TEXTO DEL TEXTAREA*/
+input[type="text"],textarea{
+    width: 20em;
+    height: 3em;
+    background-color: bisque;
+    color: black;
+    border: 1px solid rgb(138, 136, 136);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+form input[type="text"]:hover,textarea:hover{
+    border-color: aqua;
+}
+button{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(78, 78, 182);
+    color: #fff;
+}

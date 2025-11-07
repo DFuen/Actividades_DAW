@@ -1,4 +1,5 @@
-const contarTiempo = async(tiempo) => {
+const calculateTime=(tiempo) => {
+
     /*CREAMOS CONSTANTE PARA LAS 7 HORAS LIMITE */
     const limite=7*3600;
     var tiemp=tiempo;
@@ -15,18 +16,18 @@ const contarTiempo = async(tiempo) => {
         total=acc+total;
     }
     /*CREAMOS CONSTANTE PARA SABER LA DIFERENCIA CON RESPECTO AL LIMITE */
-    const diferencia_time=total-limite;
+
+    const diferenciaTime=total-limite;
 
     let convDif=Math.abs(diferencia_time);
     let horas = String(Math.floor(convDif/3600)).padStart(2,"0");
     let minutos = String(Math.floor((convDif%3600)/60)).padStart(2,"0");
     let segundos = String(Math.floor(convDif%60)).padStart(2,"0");
 
-    /*SI LA DIFERENCIA ES MENOR QUE EL LIMITE SALE ESTE MENSAJE */
-    if(diferencia_time<0){
+
+    if(diferenciaTime<0){
         return console.log("-"+`${horas}:${minutos}:${segundos}`);
     }
-    /*SI ES MAYOR ESTE OTRO*/
     else{
         return  console.log(`${horas}:${minutos}:${segundos}`);
     }

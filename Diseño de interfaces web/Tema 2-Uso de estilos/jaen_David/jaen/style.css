@@ -1,0 +1,183 @@
+/* --- Estilos base (No tocar) --- */
+body {
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h1, h2, h3, h4, p { margin: 0.5em 0; }
+a { text-decoration: none; color: #5B8C5A; } 
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    min-height: 250px; 
+}
+/* ------------------------------- */
+
+
+/* --- ¡AQUÍ EMPIEZA TU TRABAJO! --- */
+
+/* REQUISITO 1 */
+/* Haz que '.main-header' se quede fijo en la parte superior. */
+.main-header {
+    background-color: #D4AF37; 
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px 30px;
+    /* TU CÓDIGO AQUÍ */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+.main-header .logo { 
+    font-weight: bold; 
+    font-size: 1.2em;
+    display: inline; 
+}
+.main-nav {
+    display: inline; 
+    margin-left: 50px;
+}
+
+
+/* REQUISITO 2 */
+/* Haz que '.sidebar-rutas' se "pegue" al hacer scroll. */
+.sidebar-rutas {
+    width: 28%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 4px;
+    /* TU CÓDIGO AQUÍ */
+    top: 30px;
+    position:sticky;
+}
+
+/* REQUISITO 3 */
+/* Posiciona el '.badge-do' en la esquina superior derecha de '.hero-olivos'. */
+.hero-olivos {
+    background-color: #5B8C5A; /* Verde olivo */
+    color: white;
+    text-align: center;
+    /* TU CÓDIGO AQUÍ (padre) */
+    position: relative;
+
+}
+.badge-do {
+    background-color: #D4AF37; 
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+    /* TU CÓDIGO AQUÍ (hijo) */
+    position: absolute;
+    top:30px;
+    right: 15px;
+
+}
+
+/* REQUISITO 4 */
+/* Haz que los enlaces de '.main-nav' se muestren en línea. */
+.main-nav a {
+    margin-left: 20px;
+    color: white;
+    /* TU CÓDIGO AQUÍ */
+    display: inline-block;
+ 
+}
+
+/* REQUISITO 5 */
+/*2. Haz que las '.card-tapa' se muestren en horizontal. */
+.container {
+    padding-top: 80px; 
+    width: 90%;
+    margin: 0 auto;
+}
+.content {
+    width: 68%;
+    margin-left: 2%; 
+    /* TU CÓDIGO AQUÍ */
+
+}
+.sidebar-rutas { /* (Ya modificado en REQUISITO 2) */
+    /* TU CÓDIGO AQUÍ */
+
+
+
+}
+.card-tapa {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1%;
+    box-sizing: border-box; 
+    min-height: 120px;
+    /* TU CÓDIGO AQUÍ */
+    display: inline-block;
+
+}
+
+/* REQUISITO 6 */
+/* Oculta completamente el enlace '#lagarto-secreto'.*/
+#lagarto-secreto {
+    /* TU CÓDIGO AQUÍ */
+    display: none;
+
+}
+
+/* REQUISITO 7 */
+/* 1. Oculta '.tooltip-text' por defecto.
+   2. Posiciónalo de forma ABSOLUTA sobre '.tooltip-container' (que debe ser RELATIVE).
+   3. Haz que aparezca al hacer :hover sobre el contenedor. */
+.tooltip-container {
+    /* TU CÓDIGO AQUÍ (Padre) */
+    position: relative;
+
+}
+.tooltip-text {
+    background-color: #333;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 160px; 
+    text-align: center;
+    /* TU CÓDIGO AQUÍ (Hijo - Oculto y Posicionado) */
+    display: none;
+    position: absolute;
+
+}
+/* Selector :hover para mostrar el tooltip */
+.tooltip-container:hover .tooltip-text {
+    /* TU CÓDIGO AQUÍ (Mostrar) */
+    display: flex;
+
+}
+
+/* REQUISITO 8 */
+/* Asegúrate de que cada '.castillo' ocupe su propia línea. */
+.castillo {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    /* TU CÓDIGO AQUÍ */
+    display: block;
+
+}
+
+/* REQUISITO 9 */
+/* El '.main-footer' debe seguir el flujo normal. */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    /* TU CÓDIGO AQUÍ */
+    position:static;
+}

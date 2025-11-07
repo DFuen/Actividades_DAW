@@ -1,0 +1,11 @@
+table{
+     border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+}
+tbody{
+    color:red;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}

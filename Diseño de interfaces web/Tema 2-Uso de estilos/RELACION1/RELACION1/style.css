@@ -1,0 +1,40 @@
+/* Menú principal */
+.menu {
+  max-width: 1200px;           /* ancho máximo del menú */
+  margin: 2rem auto;            /* centrado horizontal en la página */
+  padding: 0;
+  display: flex;                /* disposición horizontal */
+  flex-wrap: wrap;              /* permite que los items se muevan a otra línea si no caben */
+  justify-content: center;      /* centra los elementos dentro del menú */
+  list-style: none;             /* quita viñetas */
+  background-color: #333;       /* fondo sólido */
+  border-radius: 8px;
+}
+
+/* Cada elemento del menú */
+.menu li {
+  margin: 0.5rem;               /* espaciado entre elementos */
+}
+
+/* Enlaces del menú */
+.menu a {
+  display: inline-block;
+  padding: 0.5rem 1rem;         /* relleno interno */
+  color: #f0f0f0;               /* texto claro */
+  text-decoration: none;        /* quitar subrayado por defecto */
+  font-size: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Hover: cambia solo el color del texto */
+.menu a:hover {
+  color: #ffd700;               /* color dorado al pasar el cursor */
+}
+
+/* Elemento activo */
+.menu a.activo {
+  font-weight: bold;            /* texto en negrita */
+  text-decoration: underline;   /* subrayado */
+}

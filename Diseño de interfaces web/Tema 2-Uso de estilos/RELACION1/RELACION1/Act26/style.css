@@ -1,0 +1,15 @@
+ol{
+    list-style: upper-roman;
+    font-size: 24px;
+    margin: 1em;
+}
+ol li>ol{
+    list-style:lower-alpha;
+    font-size: 19px;
+    margin: 2em;
+}
+ol li ol li>ol{
+    list-style: square;
+    font-size: 12px;
+    margin: 3em;
+}

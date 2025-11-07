@@ -1,0 +1,17 @@
+div{
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+}
+.bloq_uno{
+    width: 50%;
+    background-color: yellow;
+}
+.bloq_dos{
+    width: 30%;
+    background-color: red;
+}
+.bloq_tres{
+    width: 20%;
+        background-color: blue;
+}

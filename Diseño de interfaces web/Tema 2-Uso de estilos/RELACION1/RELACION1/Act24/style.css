@@ -1,0 +1,11 @@
+p span:nth-child(even){
+    color: blue;
+    font-weight: bold;
+}
+p span:nth-child(odd){
+    color: black;
+    font-weight: normal;
+}
+span{
+    margin-right: 0.5%;
+}

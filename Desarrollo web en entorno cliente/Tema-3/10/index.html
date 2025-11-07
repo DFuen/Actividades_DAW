@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 Librería JavaScript</h1>
+
+  <section>
+    <h2>Agregar libro</h2>
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="autor" placeholder="Autor">
+    <input type="text" id="nacionalidad" placeholder="Nacionalidad">
+    <input type="number" id="precio" placeholder="Precio (€)">
+    <input type="text" id="genero" placeholder="Género">
+    <input type="number" id="stock" placeholder="Stock">
+    <button onclick="agregarLibro()">Agregar</button>
+  </section>
+
+  <section>
+    <h2>Buscar / Filtrar</h2>
+    <input type="text" id="buscarTitulo" placeholder="Buscar por título">
+    <button onclick="buscarTitulo()">Buscar</button>
+
+    <input type="text" id="buscarAutor" placeholder="Filtrar por autor">
+    <button onclick="filtrarAutor()">Filtrar</button>
+
+    <input type="text" id="buscarGenero" placeholder="Filtrar por género">
+    <button onclick="filtrarGenero()">Filtrar</button>
+  </section>
+
+  <section>
+    <h2>Comprar libro</h2>
+    <input type="number" id="idCompra" placeholder="ISBN del libro">
+    <button onclick="comprarLibro()">Comprar</button>
+  </section>
+
+  <section>
+    <h2>📘 Libros disponibles</h2>
+    <button onclick="mostrarLibros()">Mostrar todos</button>
+    <div id="resultado"></div>
+  </section>
+
+  <section>
+    <h2>💵 Ganancias</h2>
+    <button onclick="mostrarGanancias()">Ver ganancias</button>
+    <div id="ganancias"></div>
+  </section>
+
+  <script src="libreria.js"></script>
+</body>
+</html>

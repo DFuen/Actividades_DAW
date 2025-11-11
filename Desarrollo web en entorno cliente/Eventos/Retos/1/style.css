@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    background-color: rgba(170, 170, 170, 0.623);
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 15em;
+    height: 15em;
+}
+.contenedor_1,.contenedor_2{
+    margin: 0em 1em 1em 1em;
+    width: 55vw;
+    float: left;
+}
+.contendor_resultados{
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    width: 30vw;
+    height: 30vh;
+    float: left;
+}

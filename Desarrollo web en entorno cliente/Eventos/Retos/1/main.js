@@ -1,29 +1,45 @@
-var ncartas=["0","1","2","3","4","5","6","7"];
-var cartas=["img/baston.png","img/baston.png","img/baston.png","img/baston.png"];
+var cartas=["img/baston.png","img/baston.png","img/as_oro.png","img/copas.png",
+            "img/copas.png","img/pica.png","img/as_oro.png","img/pica.png"];
 let carta=[];
+let cartas_aleatorias=[];
 var contador=0;
-let comprobador=false;
+let comprobar=false;
+let aciertos=0;
+let intentos=0;
+
 
 function comprobador(){
-/*     console.log(contador) */
-    if(contador>2){
-        for(let k=0;k<ncartas.length;k++){
-            if()
-        }
-        for(let i=0;i<carta.length;i++){
-            console.log(carta[i])
-            carta[i].src="img/reves.png"
-        }
-        contador=0;
+    if(cartas[carta[0]] == cartas[carta[1]]){
+        aciertos++;
+        intentos++;
+/*         console.log("aqui acierto"); */
+        document.getElementById(carta[0]).removeEventListener("click",voltear);
+        document.getElementById(carta[1]).removeEventListener("click",voltear);
         carta=[];
     }
+    else{
+        document.getElementById(carta[0]).src="img/reves.png";
+        document.getElementById(carta[1]).src="img/reves.png";
+        intentos++;
+/*         console.log("aqui fallo"); */
+        carta=[];
+        contador=0;
+    }
+    document.getElementById("contendor_resultados").innerHTML="Aciertos: "+aciertos+" Intentos: "+intentos;
 }
 
 function voltear(){
-    this.src="img/baston.png";
-    carta.push(this);
+    let id = this.id;
+    this.src=cartas[id];
+
     contador++;
-    comprobador();
+/*     console.log(contador); */
+    carta.push(id);
+/*     console.log(carta); */
+    if(contador===2){
+        contador=0;
+        setTimeout(comprobador,500);
+    }
 }
 
 document.getElementById("0").addEventListener("click",voltear);

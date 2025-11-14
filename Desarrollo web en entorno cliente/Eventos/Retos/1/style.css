@@ -15,7 +15,7 @@ img{
     width: 55vw;
     float: left;
 }
-.contendor_resultados{
+#contendor_resultados{
     background-color: black;
     color: white;
     border: 3px solid rgb(255, 255, 255);

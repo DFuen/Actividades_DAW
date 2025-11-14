@@ -1,0 +1,33 @@
+
+.cortinilla{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/cortinilla.webp);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+}
+.cortinilla label{
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(146, 19, 19);
+    padding: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.activador:active{
+    height: 0%;
+}
+.ocultar{
+    visibility: hidden;
+}
+.contenido{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}

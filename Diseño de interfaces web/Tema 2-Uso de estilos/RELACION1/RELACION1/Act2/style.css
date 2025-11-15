@@ -1,9 +1,0 @@
-.lista_uno li:nth-child(even){
-    text-decoration: underline;
-}
-.lista_uno li:nth-child(odd){
-    text-decoration: line-through;
-}
-.lista_dos li:nth-child(4n){
-    color: green;
-}

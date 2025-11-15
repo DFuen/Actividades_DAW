@@ -1,0 +1,104 @@
+body{
+    /*QUITAR MARGENES Y PADDING PARA ASEGURAR QUE EL 
+    CONTENIDO SE APROXIME EL MAXIMO AL MARCO DE LA VENTANA*/
+    margin: 0;
+    padding: 0;
+    /*PROPIEDAD PARA TODO EL BODY*/
+    text-align: center;
+}
+.cortinilla{
+    /*CARACTERISTICAS DE LA CAJA(TAMAÑO) Y AJUSTE DE IMAGEN*/
+    background-image: url(img/luna.webp);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
+    /*POSICION DE LOS ELEMENTOS*/
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 0;
+
+    /*ESTADO AL INICIAR LA PAGINA*/
+    transform: translateY(0);
+    opacity: 1;
+    transition: 
+        transform 1.5s ease,
+        opacity 0.5s ease 0.5s;
+
+}
+#check{
+    visibility:hidden; /* ocultar pero sigue funcionando*/
+}
+.boton{
+    position: absolute;
+    top: 50%;
+    /*FORMA DEL BOTON*/
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+    cursor:pointer;
+    /*ESTADO AL INICIAR LA PAGINA*/
+    opacity: 1;
+
+    /*POSICION DE LOS ELEMENTOS*/
+    z-index: 2;
+}
+.contendido-principal{
+    /*POSICIÓN DEL DIV DONDE SE ENCUENTRA EL CONTENIDO*/
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    width: 50%;
+    height: 75%;
+
+    /*BORDE ARRIBA, DERECHA E IZQUIERDA*/
+    border-top: 1px solid rgba(0, 0, 0, 0.651);
+    border-left: 1px solid rgba(0, 0, 0, 0.651);
+    border-right: 1px solid rgba(0, 0, 0, 0.651);
+
+    /*POSICION DE ELEMENTO*/
+    z-index: 0;
+
+    /*NO APARECE AL INICIAR LA PAGINA*/
+    display: none;
+    background-color: rgba(184, 184, 184, 0.61);
+}
+
+/*ESTILO DEL TITULO DEL CONTENIDO*/
+.contendido-principal .titulo{
+    color: rgb(216, 83, 83);
+    width: 100%;
+    height: 10%;
+    position: absolute;
+}
+
+/*ESTILO DE LA IMAGEN DENTRO DEL CONTENIDO*/
+.contendido-principal .imagen{
+    background-image: url(img/descripcion.jpg);
+    opacity: 75%;
+    background-position: center;
+    width: 100%;
+    height: 75%;
+    top:10%;
+    background-size: cover;
+    position: relative;
+}
+
+/*ACTIVADOR DE LA TRANSICIÓN A LA CORTINILLA*/
+#check:checked ~ .cortinilla{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+/*DESAPARECEMOS EL BOTON*/
+#check:checked ~ .boton{
+    display: none;
+}
+/*ACTIVADOR DE LA TRANSICIÓN PARA APARECER EL CONTENIDO*/
+#check:checked ~ .contendido-principal{
+    display: flex;
+    /*SOLO A LA MITAD DE LA PANTALLA*/
+    transform: translateY(-50vh);
+
+}

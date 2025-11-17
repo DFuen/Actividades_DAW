@@ -10,4 +10,4 @@ Diagramas
 https://mermaid.js.org/
 https://volt.ai/
 
-Preguntas para el próximo lunes
+Preguntas y backlog para el próximo lunes

@@ -1,0 +1,165 @@
+@media (min-width:360px) and (max-width: 450px){
+body{
+    background: linear-gradient(to top,#6d6b6b,#d8d6d6);
+    margin: 0;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+.contenedor-tarjeta{
+    width: 90vw;
+    height: 80vh;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+}
+/*DIV TARJETA*/
+.tarjeta-imagen,img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tarjeta-imagen img{
+    width: 100%;
+}
+/*DIV TARJETA CONTENIDO*/
+.tarjeta-contenido{
+   margin:0.8em;
+}
+.tarjeta-contenido h2{
+    margin-top: 1.5em;
+}
+.tarjeta-contenido p{
+    color: #6d6b6b;
+    margin-bottom: 2em;
+}
+.boton{
+    background: linear-gradient(to left,rgb(0, 66, 121),rgb(78, 103, 129));
+    padding: 0.3em;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+}
+
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 1450px){
+body{
+    background: linear-gradient(to top,#5d90a0,#d6f1f3);
+    margin: 0;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+}
+.contenedor-tarjeta{
+    width: 90vw;
+    height: 70vh;
+    border-radius: 15px;
+    background-color: white;
+}
+/*DIV TARJETA*/
+.tarjeta{
+    height: 100%;
+}
+.tarjeta-imagen,img{
+    float: left;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+
+}
+.tarjeta-imagen{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+/*DIV TARJETA CONTENIDO*/
+.tarjeta-contenido{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    font-size: 160%;
+    margin-top: 10vh;
+}
+.tarjeta-contenido p{
+    color: #6d6b6b;
+    margin-bottom: 2em;
+}
+.boton{
+    background: linear-gradient(to left,rgb(0, 66, 121),rgb(78, 103, 129));
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 6em;
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}  
+}
+
+@media (min-width: 1500px) and (max-width: 1920px){
+body{
+    background: linear-gradient(to top,#5d90a0,#d6f1f3);
+    margin: 0;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+}
+.contenedor-tarjeta{
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    background-color: white;
+}
+/*DIV TARJETA*/
+.tarjeta{
+    height: 100%;
+}
+.tarjeta-imagen,img{
+    float: left;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+
+}
+.tarjeta-imagen{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+/*DIV TARJETA CONTENIDO*/
+.tarjeta-contenido{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+/*     font-size: 220%; */
+    margin-top: 5vh;
+}
+.tarjeta-contenido p{
+    color: #6d6b6b;
+    margin-bottom: 2em;
+}
+.boton{
+    background: linear-gradient(to left,rgb(0, 66, 121),rgb(78, 103, 129));
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 15em;
+    color:white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.tarjeta:hover{
+    box-shadow: 0.5em 0.5em rgba(145, 144, 144, 0.726);
+    border-radius: 15px;
+}
+.contenedor-tarjeta a:hover{
+    background: linear-gradient(to right,rgb(0, 66, 121),rgb(78, 103, 129));
+}
+}

@@ -1,1 +1,13 @@
-https://www.notion.com/product método scrum
+https://majprofe.github.io/proyecto_intermodular_2DAW/
+
+método scrum
+
+https://www.notion.com/product
+También se puede hacer en Project en GitHub 
+
+Diagramas
+
+https://mermaid.js.org/
+https://volt.ai/
+
+Preguntas para el próximo lunes

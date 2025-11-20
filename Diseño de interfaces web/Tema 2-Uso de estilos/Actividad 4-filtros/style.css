@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.galeria{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+}
+.contenedor{
+    justify-items: center;
+    align-content: center;
+    background-color: black;
+    width: 20vw;
+    height: 40vh;
+    color: white;
+}
+h3{
+    margin-top: 1vh;
+}
+.img1{
+    width: 15vw;
+    height: 35vh;
+    background-image: url(/img/imagen.jpg);
+    background-size: cover;
+}

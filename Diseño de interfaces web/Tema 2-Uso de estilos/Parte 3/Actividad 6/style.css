@@ -15,22 +15,22 @@
     animation: latidos 1.5s linear infinite;
 }
 .latido{
-    width: 5vw;
-    height: 5vh;
+    width: 3em;
+    height: 3em;
     background-color: red;
 
 }
 
 .latido1{
-    width: 8vw;
-    height: 8vh;
+    width: 7em;
+    height: 7em;
     background-color: red;
     opacity: 80%;
 }
 
 .latido2{
-    width: 10vw;
-    height: 10vh;
+    width: 10em;
+    height: 10em;
     background-color: red;
     opacity: 70%;
 
@@ -50,7 +50,7 @@
 /*FORMA 2*/
 .barra{
     margin-left: 5vw;
-    width: 25vw;
+    width: 15%;
     height: 1vh;
     border: 1px solid black;
     border-radius: 15px;

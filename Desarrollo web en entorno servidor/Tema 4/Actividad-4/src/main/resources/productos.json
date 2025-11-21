@@ -1,0 +1,352 @@
+[
+  {
+    "id": "SKU-1001",
+    "nombre": "Camiseta Básica Blanca",
+    "precio": 19.99,
+    "categoria": "Camisetas",
+    "stock": 150
+  },
+  {
+    "id": "SKU-1002",
+    "nombre": "Camiseta Básica Negra",
+    "precio": 19.99,
+    "categoria": "Camisetas",
+    "stock": 140
+  },
+  {
+    "id": "SKU-1003",
+    "nombre": "Camiseta Gráfica 'Logo'",
+    "precio": 29.95,
+    "categoria": "Camisetas",
+    "stock": 80
+  },
+  {
+    "id": "SKU-1004",
+    "nombre": "Camiseta Manga Larga",
+    "precio": 24.50,
+    "categoria": "Camisetas",
+    "stock": 60
+  },
+  {
+    "id": "SKU-2001",
+    "nombre": "Vaqueros Slim Fit",
+    "precio": 59.90,
+    "categoria": "Pantalones",
+    "stock": 90
+  },
+  {
+    "id": "SKU-2002",
+    "nombre": "Vaqueros Rectos Azules",
+    "precio": 55.00,
+    "categoria": "Pantalones",
+    "stock": 70
+  },
+  {
+    "id": "SKU-2003",
+    "nombre": "Pantalones Chino Beige",
+    "precio": 49.95,
+    "categoria": "Pantalones",
+    "stock": 100
+  },
+  {
+    "id": "SKU-2004",
+    "nombre": "Pantalones Chino Negros",
+    "precio": 49.95,
+    "categoria": "Pantalones",
+    "stock": 95
+  },
+  {
+    "id": "SKU-2005",
+    "nombre": "Pantalón Jogger Gris",
+    "precio": 39.99,
+    "categoria": "Pantalones",
+    "stock": 110
+  },
+  {
+    "id": "SKU-2006",
+    "nombre": "Bermuda Cargo Verde",
+    "precio": 35.50,
+    "categoria": "Pantalones",
+    "stock": 40
+  },
+  {
+    "id": "SKU-3001",
+    "nombre": "Chaqueta Vaquera Clásica",
+    "precio": 79.99,
+    "categoria": "Chaquetas",
+    "stock": 50
+  },
+  {
+    "id": "SKU-3002",
+    "nombre": "Bomber Negra",
+    "precio": 89.00,
+    "categoria": "Chaquetas",
+    "stock": 45
+  },
+  {
+    "id": "SKU-3003",
+    "nombre": "Abrigo de Paño Gris",
+    "precio": 149.90,
+    "categoria": "Chaquetas",
+    "stock": 25
+  },
+  {
+    "id": "SKU-3004",
+    "nombre": "Parka Verde Militar",
+    "precio": 120.00,
+    "categoria": "Chaquetas",
+    "stock": 30
+  },
+  {
+    "id": "SKU-3005",
+    "nombre": "Chubasquero Amarillo",
+    "precio": 45.00,
+    "categoria": "Chaquetas",
+    "stock": 0
+  },
+  {
+    "id": "SKU-3006",
+    "nombre": "Cazadora de Cuero",
+    "precio": 199.99,
+    "categoria": "Chaquetas",
+    "stock": 15
+  },
+  {
+    "id": "SKU-4001",
+    "nombre": "Sudadera Capucha Gris",
+    "precio": 44.95,
+    "categoria": "Sudaderas",
+    "stock": 130
+  },
+  {
+    "id": "SKU-4002",
+    "nombre": "Sudadera Capucha Negra",
+    "precio": 44.95,
+    "categoria": "Sudaderas",
+    "stock": 120
+  },
+  {
+    "id": "SKU-4003",
+    "nombre": "Sudadera Cuello Redondo",
+    "precio": 39.95,
+    "categoria": "Sudaderas",
+    "stock": 70
+  },
+  {
+    "id": "SKU-4004",
+    "nombre": "Sudadera Cremallera",
+    "precio": 54.90,
+    "categoria": "Sudaderas",
+    "stock": 40
+  },
+  {
+    "id":"SKU-5001",
+    "nombre": "Camisa Oxford Blanca",
+    "precio": 39.99,
+    "categoria": "Camisas",
+    "stock": 65
+  },
+  {
+    "id": "SKU-5002",
+    "nombre": "Camisa Oxford Azul",
+    "precio": 39.99,
+    "categoria": "Camisas",
+    "stock": 75
+  },
+  {
+    "id": "SKU-5003",
+    "nombre": "Camisa de Cuadros",
+    "precio": 42.50,
+    "categoria": "Camisas",
+    "stock": 50
+  },
+  {
+    "id": "SKU-5004",
+    "nombre": "Camisa de Lino",
+    "precio": 49.90,
+    "categoria": "Camisas",
+    "stock": 30
+  },
+  {
+    "id": "SKU-5005",
+    "nombre": "Camisa Vaquera",
+    "precio": 55.00,
+    "categoria": "Camisas",
+    "stock": 40
+  },
+  {
+    "id": "SKU-6001",
+    "nombre": "Zapatillas Blancas Piel",
+    "precio": 99.95,
+    "categoria": "Calzado",
+    "stock": 80
+  },
+  {
+    "id": "SKU-6002",
+    "nombre": "Zapatillas Running",
+    "precio": 110.00,
+    "categoria": "Calzado",
+    "stock": 60
+  },
+  {
+    "id": "SKU-6003",
+    "nombre": "Botas de Cuero Marrón",
+    "precio": 130.00,
+    "categoria": "Calzado",
+    "stock": 40
+  },
+  {
+    "id": "SKU-6004",
+    "nombre": "Zapatos de Vestir Negros",
+    "precio": 140.00,
+    "categoria": "Calzado",
+    "stock": 30
+  },
+  {
+    "id": "SKU-6005",
+    "nombre": "Sandalias de Tira",
+    "precio": 29.99,
+    "categoria": "Calzado",
+    "stock": 55
+  },
+  {
+    "id": "SKU-6006",
+    "nombre": "Botines Chelsea",
+    "precio": 125.50,
+    "categoria": "Calzado",
+    "stock": 25
+  },
+  {
+    "id": "SKU-7001",
+    "nombre": "Cinturón de Piel Negro",
+    "precio": 29.95,
+    "categoria": "Accesorios",
+    "stock": 90
+  },
+  {
+    "id": "SKU-7002",
+    "nombre": "Cinturón de Piel Marrón",
+    "precio": 29.95,
+    "categoria": "Accesorios",
+    "stock": 85
+  },
+  {
+    "id": "SKU-7003",
+    "nombre": "Gorro de Lana Gris",
+    "precio": 15.99,
+    "categoria": "Accesorios",
+    "stock": 150
+  },
+  {
+    "id": "SKU-7004",
+    "nombre": "Bufanda de Cuadros",
+    "precio": 25.00,
+    "categoria": "Accesorios",
+    "stock": 60
+  },
+  {
+    "id": "SKU-7005",
+    "nombre": "Gorra Béisbol Azul",
+    "precio": 19.90,
+    "categoria": "Accesorios",
+    "stock": 100
+  },
+  {
+    "id": "SKU-7006",
+    "nombre": "Gafas de Sol 'Aviador'",
+    "precio": 75.00,
+    "categoria": "Accesorios",
+    "stock": 35
+  },
+  {
+    "id": "SKU-7007",
+    "nombre": "Gafas de Sol 'Wayfarer'",
+    "precio": 69.00,
+    "categoria": "Accesorios",
+    "stock": 45
+  },
+  {
+    "id": "SKU-7008",
+    "nombre": "Mochila Lona Negra",
+    "precio": 49.99,
+    "categoria": "Accesorios",
+    "stock": 50
+  },
+  {
+    "id": "SKU-7009",
+    "nombre": "Calcetines Blancos (Pack 3)",
+    "precio": 12.99,
+    "categoria": "Accesorios",
+    "stock": 200
+  },
+  {
+    "id": "SKU-7010",
+    "nombre": "Calcetines Negros (Pack 3)",
+    "precio": 12.99,
+    "categoria": "Accesorios",
+    "stock": 190
+  },
+  {
+    "id": "SKU-7011",
+    "nombre": "Cartera de Piel",
+    "precio": 35.00,
+    "categoria": "Accesorios",
+    "stock": 70
+  },
+  {
+    "id": "SKU-8001",
+    "nombre": "Vestido Floral",
+    "precio": 69.90,
+    "categoria": "Vestidos",
+    "stock": 40
+  },
+  {
+    "id": "SKU-8002",
+    "nombre": "Vestido Negro 'LBD'",
+    "precio": 79.95,
+    "categoria": "Vestidos",
+    "stock": 30
+  },
+  {
+    "id": "SKU-8003",
+    "nombre": "Vestido de Punto",
+    "precio": 59.00,
+    "categoria": "Vestidos",
+    "stock": 0
+  },
+  {
+    "id": "SKU-9001",
+    "nombre": "Falda Vaquera",
+    "precio": 34.99,
+    "categoria": "Faldas",
+    "stock": 50
+  },
+  {
+    "id": "SKU-9002",
+    "nombre": "Falda Plisada",
+    "precio": 45.00,
+    "categoria": "Faldas",
+    "stock": 35
+  },
+  {
+    "id": "SKU-1005",
+    "nombre": "Polo Blanco",
+    "precio": 29.99,
+    "categoria": "Camisetas",
+    "stock": 60
+  },
+  {
+    "id": "SKU-1006",
+    "nombre": "Polo Azul Marino",
+    "precio": 29.99,
+    "categoria": "Camisetas",
+    "stock": 65
+  },
+  {
+    "id": "SKU-7012",
+    "nombre": "Reloj Analógico Correa Piel",
+    "precio": 129.00,
+    "categoria": "Accesorios",
+    "stock": 20
+  }
+]

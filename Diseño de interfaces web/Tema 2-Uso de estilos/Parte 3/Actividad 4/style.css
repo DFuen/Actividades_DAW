@@ -43,6 +43,11 @@ img{
     margin-left: 1vw;
 }
 
+/*QUITAR FILTRO*/
+.contenedor_img:hover img{
+    filter: none;
+}
+
 /*FILTROS*/
 .grayscale{
     filter: grayscale(100%);

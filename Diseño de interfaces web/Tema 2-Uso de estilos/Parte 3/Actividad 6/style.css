@@ -1,0 +1,73 @@
+
+/*FORMA 1*/
+.content{
+    width: 40vw;
+    height: 40vh;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content div{
+    position: absolute;
+    border-radius: 50%;   
+    animation: latidos 1.5s linear infinite;
+}
+.latido{
+    width: 5vw;
+    height: 5vh;
+    background-color: red;
+
+}
+
+.latido1{
+    width: 8vw;
+    height: 8vh;
+    background-color: red;
+    opacity: 80%;
+}
+
+.latido2{
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+    opacity: 70%;
+
+}
+
+@keyframes latidos {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+         transform: scale(1.5 ,1.5);
+        opacity: 0;
+    }
+    
+}
+
+/*FORMA 2*/
+.barra{
+    margin-left: 5vw;
+    width: 25vw;
+    height: 1vh;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.relleno{
+        width: 0;
+        height: 100%;
+        animation: rellenar 3s linear infinite;
+}
+@keyframes rellenar {
+    from{
+        width: 0%;
+        background-color: red;
+    }
+    to{
+      width: 100%;
+      background-color: green;
+    }
+    
+}

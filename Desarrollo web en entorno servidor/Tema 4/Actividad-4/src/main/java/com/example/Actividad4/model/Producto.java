@@ -10,6 +10,14 @@ public class Producto {
     public Producto() {
     }
 
+    public Producto(String id, String nombre, double precio, String categoria, int stock) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.categoria = categoria;
+        this.stock = stock;
+    }
+
     public String getId() {
         return id;
     }

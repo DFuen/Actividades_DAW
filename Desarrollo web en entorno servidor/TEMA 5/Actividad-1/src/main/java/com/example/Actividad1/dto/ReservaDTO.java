@@ -1,13 +1,31 @@
 package com.example.Actividad1.dto;
 
 public class ReservaDTO {
-    private int idReserva;
+    private int horaInicio;
+    private int duracionHoras;
+    private String nombre;
 
-    public int getIdReserva() {
-        return idReserva;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setIdReserva(int idReserva) {
-        this.idReserva = idReserva;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getDuracionHoras() {
+        return duracionHoras;
+    }
+
+    public void setDuracionHoras(int duracionHoras) {
+        this.duracionHoras = duracionHoras;
+    }
+
+    public int getHoraInicio() {
+        return horaInicio;
+    }
+
+    public void setHoraInicio(int horaInicio) {
+        this.horaInicio = horaInicio;
     }
 }

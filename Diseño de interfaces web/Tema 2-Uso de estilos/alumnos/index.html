@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen CSS Avanzado - Nivel Super Mario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <div class="cuerpo">
+        <!-- CABECERA -->
+        <header>
+            <h1>Super Mario Bros</h1>
+            <p>World 1-1</p>
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a class="enlaces" href="#">Inicio</a></li>
+                <li><a class="enlaces" href="#">Mundos</a></li>
+                <li><a class="enlaces" href="#">Personajes</a></li>
+                <li><a class="enlaces" href="#">Ranking</a></li>
+            </ul>
+        </nav>
+
+        <!-- BLOQUE IZQUIERDA -->
+        <aside class="contentIzquierda">
+            <h3>MARIO</h3>
+            <img src="mario.png" alt="Super Mario">
+        </aside>
+
+        <!-- BLOQUE GRANDE CENTRAL -->
+        <main>
+            <h2>Main Stage</h2>
+            
+            <p>
+                Super Mario Bros. (1985) revolucionó el género de plataformas. 
+                En este nivel, Mario debe atravesar el Reino Champiñón para rescatar a la 
+                Princesa Peach de las garras del Rey Koopa (Bowser).
+            </p>
+            
+            <!-- BARRA DE PODER -->
+            <div class="content-barra">
+                <label>P-METER</label>
+                <div class="barra">
+                    <div class="relleno"></div>
+                </div>
+            </div>
+
+            <br>
+            <p>
+                Los jugadores controlan a Mario (o a Luigi en modo multijugador) mientras viajan 
+                de izquierda a derecha. El mundo está lleno de monedas, ladrillos destructibles 
+                y bloques con signos de interrogación que otorgan poderes especiales como el 
+                Super Champiñón, que dobla el tamaño de Mario, o la Flor de Fuego.
+            </p>
+        </main>
+
+        <!-- BLOQUE DERECHA -->
+        <aside class="contentDerecha">
+            
+            <!-- CAJA SUPERIOR -->
+            <div class="subcontent-1">
+                <h3>Score</h3>
+                <div class="scoreRed">
+                    002450
+                </div>
+                <br>
+                <h3>Time</h3>
+                <div>
+                    365
+                </div>
+            </div>
+
+            <!-- CAJA INFERIOR-->
+            <div class="subcontent-2">
+                <div>
+                    <div class="animar">🍄</div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 1985 - 2024 Nintendo</p>
+        </footer>
+    </div>
+
+    <!-- BOTÓN FLOTANTE -->
+    <button>
+        ?
+    </button>
+
+</body>
+</html>

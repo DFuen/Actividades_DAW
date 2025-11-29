@@ -1,0 +1,414 @@
+:root {
+    /* --- PALETA DE COLORES--- */
+    --mario-red: #E52521;      /* Rojo gorra */
+    --luigi-green: #43B047;    /* Verde tubería */
+    --coin-yellow: #FBD000;    /* Amarillo moneda/estrella */
+    --sky-blue: #6185F8;       /* Azul cielo */
+    --brick-color: #B13425;    /* Marrón ladrillo/suelo */
+    --ground-brown: #924A40;   /* Marrón oscuro */
+    --text-dark: #222;         /* Texto casi negro */
+    --white: #ffffff;          /* Blanco puro */
+    --shadow-black: #000000;   /* Negro puro para sombras */
+    /* --- TIPOGRAFÍAS --- */
+    --font-main: 'Roboto', sans-serif;          /* Fuente general de lectura */
+    --font-pixel: 'Press Start 2P', cursive;    /* Fuente decorativa pixelada */
+    /* --- SOMBRAS --- */
+    --pixel-shadow: 4px 4px 0px var(--shadow-black);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/*RESPONSIVE*/
+@media (min-width:300px) and (max-width:600px){
+
+body{
+    justify-items: center;
+    background-color: var(--sky-blue);
+}
+.cuerpo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*CABECERA*/
+header{
+    /**/
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+header h1{
+    margin: 1%;
+    text-shadow: 4px 4px 4px black;
+}
+
+/*NAVEGADOR (MENÚ)*/
+nav{
+    background-color: var(--luigi-green);
+
+    /**/
+    height: 100%;
+    width: 100%;
+}
+nav ul{
+    display: block;
+    
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+}
+.enlaces{
+    text-decoration: none;
+    color:white;
+}
+
+.enlaces:hover{
+    color: var(--coin-yellow);
+}
+
+/*BLOQUE IZQUIERDA*/
+.contentIzquierda{
+    width: 100%;
+}
+.contentIzquierda img{
+    width: 70%;
+    height: 70%;
+    margin-left: 14%;
+}
+img{
+    animation: vuelta 1s reverse;
+}
+@keyframes vuelta {
+    0%{
+
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+img:hover{
+    animation: girar 1s linear;
+}
+@keyframes girar {
+    0%{
+
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+
+/*BLOQUE CENTRAL*/
+main{
+    background-color: var(--white);
+
+    /**/
+    padding: 3%;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.content-barra{
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.barra{
+    border: 6px solid black;
+}
+.relleno{
+    height: 3vh;
+    width: 75%;
+    background:linear-gradient(green,yellow,red);
+}
+
+/*BLOQUE DERECHA*/
+.contentDerecha{
+
+    /**/
+    width: 100%;
+    height: 20vh;
+}
+.contentDerecha div{
+    margin-top: 2%;
+}
+.subcontent-2{
+    margin-left: 50%;
+}
+.scoreRed{
+    color: red;
+    font-size: 20px;
+}
+.animar{
+    animation: expandir 1.5s linear infinite;
+}
+@keyframes expandir {
+    for{
+        scale: 1%;
+    }
+    to{
+        scale: 300%;
+    }
+    
+}
+/*PIE*/
+footer{
+    color:white;
+    width: 100%;
+}
+
+/*ESTILOS A VARIOS*/
+
+/*BORDE DE LAS CAJAS*/
+header,nav,.contentIzquierda,.contentDerecha,main,footer{
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+}
+
+/*COLOR "AMARILLO" DE LAS CAJAS*/
+.contentIzquierda,.contentDerecha{
+    background-color: #d4ce71;
+}
+
+/*COLOR "RED" DE LAS CAJAS*/
+header,footer{
+    background-color: var(--mario-red);
+}
+
+/*CENTRADO HORIZONTAL Y VERTICAL*/
+.contentIzquierda,footer{
+    justify-items: center;
+    align-content: center;    
+}
+header,nav{
+    align-content: center;
+}
+
+/*AJUSTE DE TAMAÑO DE LAS CAJAS DE LA DERECHA*/
+.subcontent-1,.subcontent-2{
+    display: flex;
+    gap: 2%;
+}
+
+/*COLOR NEGRITA*/
+label,footer,.scoreRed{
+    font-weight: bold;
+}
+
+/*FUENTE DE PIXEL*/
+h1,h2,h3{
+    font-family: var(--font-pixel);
+    margin: 3%;
+}
+
+}
+/*---------------------------------------------------ESCRITORIO-----------------------------------------------------------------------*/
+
+@media (min-width:600px) {
+    
+body{
+    justify-items: center;
+    background-color: var(--sky-blue);
+}
+.cuerpo{
+    width: 75vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 2%;
+}
+
+/*CABECERA*/
+header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    /**/
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+header h1{
+    margin: 1%;
+    text-shadow: 4px 4px 4px black;
+}
+
+/*NAVEGADOR (MENÚ)*/
+nav{
+    background-color: var(--luigi-green);
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    /**/
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    gap: 2%;
+}
+.enlaces{
+    text-decoration: none;
+    color:white;
+}
+
+.enlaces:hover{
+    color: var(--coin-yellow);
+}
+
+/*BLOQUE IZQUIERDA*/
+.contentIzquierda{
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+
+    /**/
+}
+.contentIzquierda img{
+    width: 70%;
+    height: 70%;
+    margin-left: 14%;
+}
+img{
+    animation: vuelta 1s reverse;
+}
+@keyframes vuelta {
+    0%{
+
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+img:hover{
+    animation: girar 1s linear;
+}
+@keyframes girar {
+    0%{
+
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+
+/*BLOQUE CENTRAL*/
+main{
+    background-color: var(--white);
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+
+    /**/
+    padding: 3%;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.content-barra{
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.barra{
+    border: 6px solid black;
+}
+.relleno{
+    height: 3vh;
+    width: 75%;
+    background:linear-gradient(green,yellow,red);
+}
+
+/*BLOQUE DERECHA*/
+.contentDerecha{
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+
+    /**/
+    height: 100%;
+}
+.subcontent-1{
+    margin-bottom: 10%;
+}
+.scoreRed{
+    color: red;
+    font-size: 20px;
+}
+.animar{
+    animation: expandir 1.5s linear infinite;
+}
+@keyframes expandir {
+    for{
+        scale: 1%;
+    }
+    to{
+        scale: 1500%;
+    }
+    
+}
+
+/*PIE*/
+footer{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    color:white;
+}
+
+/*ESTILOS A VARIOS*/
+
+/*BORDE DE LAS CAJAS*/
+header,nav,.contentIzquierda,.subcontent-1,.subcontent-2,main,footer{
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+}
+
+/*COLOR "AMARILLO" DE LAS CAJAS*/
+.contentIzquierda,.subcontent-1,.subcontent-2{
+    background-color: #d4ce71;
+}
+
+/*COLOR "RED" DE LAS CAJAS*/
+header,footer{
+    background-color: var(--mario-red);
+}
+
+/*CENTRADO HORIZONTAL Y VERTICAL*/
+.subcontent-1,.subcontent-2,.contentIzquierda,footer{
+    justify-items: center;
+    align-content: center;    
+}
+header,nav{
+    align-content: center;
+}
+
+/*AJUSTE DE TAMAÑO DE LAS CAJAS DE LA DERECHA*/
+.subcontent-1,.subcontent-2{
+    height: 46.5%;
+}
+
+/*COLOR NEGRITA*/
+label,footer,.scoreRed{
+    font-weight: bold;
+}
+
+/*FUENTE DE PIXEL*/
+h1,h2,h3{
+    font-family: var(--font-pixel);
+    margin: 3%;
+}
+
+}
+

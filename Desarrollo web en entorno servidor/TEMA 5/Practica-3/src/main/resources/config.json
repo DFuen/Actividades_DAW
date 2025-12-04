@@ -1,0 +1,12 @@
+[
+  {
+    "tamañoMapa": 50,
+    "bateriaInicial": 100,
+    "costoMovimiento": 5,
+    "zonasRestringidas": [
+      {"x": 10, "y": 10},
+      {"x": 25, "y": 25}
+    ],
+    "tokenSeguridad": "MARTE-2024-CLAVE"
+  }
+]

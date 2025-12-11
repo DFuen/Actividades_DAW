@@ -1,0 +1,140 @@
+
+/*TIPO DE TEXTOS PREDEFINIDOS*/
+    h1{
+        font-family: "Paprika", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: #1B5E20;
+    }
+    h2{
+        font-family: "Paprika", system-ui;
+        font-weight: 370;
+        font-style: normal;
+        color: #1B5E20;
+    }
+    h3{
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    p,a{
+      font-family: "Gowun Dodum", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #333333;
+    }
+    h6{
+        font-family: "Hachi Maru Pop", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+nav,main,footer,.item-menu{
+    width: 100%;
+}
+/*NAVEGACIÓN*/
+nav{
+    height: 12%;
+    justify-items: center;
+    z-index: 9999;
+
+    /**/
+    border-bottom:3px solid rgba(0, 0, 0, 0.445);
+    background-color: #FFC107;
+}
+.logo{
+    margin-left: 5%;
+    float: left;
+    height: 100%;
+    z-index: 999;
+}
+img{
+    height: 100%;
+    object-fit: contain;
+}
+.menu{
+    /*POSICIONAMIENTO Y TAMAÑO*/
+    display: flex;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+}
+.item-menu,.sub-item,.item-menu a{background-color: #4CAF50;text-decoration: none; color:#FFFFFF;}
+
+.item-menu{
+    margin-top: 3%;
+    height: 30%;
+    z-index: 9999;
+    position: relative;
+    text-align: center;
+    align-content: center;
+
+    /**/
+    background-color: #4CAF50;
+    border: 1px solid black;
+}
+.item-menu:hover,.item-menu a:hover{background-color: #388E3C;}
+
+/*SUBMENU*/
+.sub-item-content,.sub-item,.content{
+    width: 100%;
+    height: 80%;
+}
+.sub-item-content{
+    position: absolute;
+    top: 100%;
+
+    /*ESTADO INVISIBLE DEL SUBMENU*/
+    opacity: 0;
+    visibility: hidden;
+}
+.sub-item{
+    width: 100%;
+    margin-top: 0.3%;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+/*MOSTRAR EL SUBMENU AL PASAR EL RATON*/
+.item-menu:hover .sub-item-content{
+    opacity: 1;
+    visibility: visible;
+
+    /**/
+}
+/*CUERPO PRINCIPAL*/
+main{
+    position: relative;
+    height: 95%;
+    overflow: hidden;
+    z-index: 0;
+
+    /**/
+    background-color: #FAFAFA;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+/*FOOTER*/
+footer{
+    position: relative;
+    height: 5%;
+    z-index: 999;
+    align-content: center;
+    justify-items: center;
+
+    /**/
+    background-color: brown;
+
+}

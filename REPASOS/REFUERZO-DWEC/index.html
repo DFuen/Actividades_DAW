@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+<div class="form-container">
+	<p class="title">FORMULARIO</p>
+	<form class="form">
+		<div id="mensaje-resumen"></div>
+		<div class="input-group">
+			<label for="id">IDENTIFICADOR</label>
+			<input type="text" name="id" id="id" placeholder="">
+			<span id="icono-id" class="icono-validacion"></span>
+		</div>
+		<div class="input-group">
+			<label for="nombre">NOMBRE</label>
+			<input type="text" name="nombre" id="nombre" placeholder="">
+			<span id="icono-nombre" class="icono-validacion"></span>
+		</div>
+        <div class="input-group">
+			<label for="correo">CORREO</label>
+			<input type="text" name="correo" id="correo" placeholder="">
+			<span id="icono-correo" class="icono-validacion"></span>
+		</div>
+        <div class="input-group">
+			<label for="edad">EDAD</label>
+			<input type="number" name="edad" id="edad" placeholder="">
+			<span id="icono-edad" class="icono-validacion"></span>
+		</div>
+        <div class="input-group">
+			<label for="telefono">TELEFONO</label>
+			<input type="text" name="tlf" id="tlf" placeholder="">
+			<span id="icono-tlf" class="icono-validacion"></span>
+		</div>
+		<button class="boton" id="enviar">ENVIAR</button>
+	</form>
+	<script src="main.js"></script>
+</body>
+</html>

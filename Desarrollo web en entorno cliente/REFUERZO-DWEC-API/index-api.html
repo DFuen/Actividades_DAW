@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <form novalidate id="formulario">
+        <label>BUSCADOR</label>
+        <input type="text" id="identificador">
+        <select id="opcion">
+            <option value="character">PERSONAJES</option>
+            <option value="location">LOCALIZACIONES</option>
+            <option value="episode">EPISODIOS</option>
+        </select>
+        <button type="submit">BUSCAR</button>
+    </form>
+    <div id="apicontent">
+        <div id="contenedor"></div>
+    </div>
+    <script src="main-api.js"></script>
+</body>
+</html>

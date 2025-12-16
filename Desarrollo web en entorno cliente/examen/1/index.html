@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="shippingForm" novalidate>
+    <!-- 1. Código de Seguimiento -->
+    <div class="form-group">
+        <label for="trackingId">Código de Seguimiento (Tracking ID):</label>
+        <div class="input-wrapper">
+            <input type="text" id="trackingId" name="trackingId" required regex="^ES\d{9}\w{2}$" >
+            <span id="trackingIcon"></span>
+            <span id="error"></span>
+        </div>
+    </div>
+
+    <!-- 2. Código Postal de Destino -->
+    <div class="form-group">
+        <label for="postalCode">Código Postal de Destino:</label>
+        <input type="text" id="postalCode" name="postalCode" title="Debe ser un número de 5 dígitos empezando por 0-5" required regex="[0-5]{5}$">
+        <span id="error"></span>
+    </div>
+
+    <!-- 3. Peso del Paquete -->
+    <div class="form-group">
+        <label for="weight">Peso del Paquete (kg):</label>
+        <input type="number" id="weight" name="weight" required regex="[0-4]?[0-9]\.[0.9]||50$">
+        <span id="error"></span>
+    </div>
+
+    <!-- 4. Servicio -->
+    <div class="form-group">
+        <label for="service">Servicio:</label>
+        <input type="text" id="service" name="service" required regex="^[Urgente]|[Estandar]|[Economico]\s[24|48|72]h$">
+        <span id="error"></span>
+    </div>
+
+    <button type="submit">Enviar</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

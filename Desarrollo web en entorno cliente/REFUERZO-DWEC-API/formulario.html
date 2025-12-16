@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <form id="formulario" novalidate>
+        <input type="text" id="id" placeholder="DD#8908" required pattern="^[A-Z]{2}[^\d\s\.\w]{1}\d{4}$"><br>
+        <span id="error-id"></span><br>
+        <input type="text" id="nombre" placeholder="Pedro Martinez" required pattern="^\w{1,50}$"><br>
+        <span id="error-nombre"></span><br>
+        <input type="text" id="correo" placeholder="email@email.com" required pattern="^[\w\d\.\-\_]{1,20}\@[\d]{1,20}\.\w{2,3}$"><br>
+        <span id="error-correo"></span><br>
+        <input type="text" id="edad" placeholder="24" required pattern="^19|[2-9][0-9]|\d{3}$"><br>
+        <span id="error-edad"></span><br>
+        <input type="text" id="telefono" placeholder="+34-612345678" required pattern="^\+[1-9]{2,3}\-\d{9}$"><br>
+        <span id="error-telefono"></span><br>
+        <button type="submit">Enviar</button><br>
+    </form>
+    <script src="man-formulario.js"></script>
+</body>
+</html>

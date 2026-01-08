@@ -45,19 +45,19 @@ nav,main,footer,.item-menu{
 nav{
     height: 12%;
     justify-items: center;
+    align-content: center;
     z-index: 9999;
+    display: flex;
 
     /**/
     border-bottom:3px solid rgba(0, 0, 0, 0.445);
-    background-color: #FFC107;
 }
 .logo{
-    margin-left: 5%;
-    float: left;
     height: 100%;
     z-index: 999;
 }
 img{
+    margin:0 auto auto;
     height: 100%;
     object-fit: contain;
 }
@@ -65,25 +65,36 @@ img{
     /*POSICIONAMIENTO Y TAMAÑO*/
     display: flex;
     height: 100%;
-    width: 80%;
+    width: 100%;
     justify-content: center;
+
 }
-.item-menu,.sub-item,.item-menu a{background-color: #4CAF50;text-decoration: none; color:#FFFFFF;}
+.item-menu,.sub-item,.item-menu a,nav{
+    background-color: #AE6F16;
+    text-decoration: none;
+    color:#FFFFFF;
+}
 
 .item-menu{
-    margin-top: 3%;
-    height: 30%;
+    height: 100%;
     z-index: 9999;
     position: relative;
     text-align: center;
     align-content: center;
 
-    /**/
-    background-color: #4CAF50;
-    border: 1px solid black;
 }
-.item-menu:hover,.item-menu a:hover{background-color: #388E3C;}
-
+.item-menu:hover{
+    border-left: 1px solid rgba(0, 0, 0, 0.541);
+    border-right: 1px solid rgba(0, 0, 0, 0.541);
+}
+.item-menu:hover,.item-menu a:hover{
+    background-color: #875612;
+}
+.item-menu h3{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
 /*SUBMENU*/
 .sub-item-content,.sub-item,.content{
     width: 100%;
@@ -108,8 +119,6 @@ img{
 .item-menu:hover .sub-item-content{
     opacity: 1;
     visibility: visible;
-
-    /**/
 }
 /*CUERPO PRINCIPAL*/
 main{
@@ -119,7 +128,7 @@ main{
     z-index: 0;
 
     /**/
-    background-color: #FAFAFA;
+    background-color: #FAF103;
 }
 .content{
     height: 100%;

@@ -1,0 +1,13 @@
+.contenido{
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+.contenido-web{
+    margin: 1%;
+    grid-column: 1 / 2;
+}
+.noticias{
+    grid-column: 2 / 3;
+    border-left: 1px solid black;
+    background-color: #F0CB01;
+}

@@ -12,3 +12,7 @@ https://www.eniun.com/ejercicios-accesibilidad-web-problemas-soluciones/
 DESARROLLO WEB EN ENTORNO SERVIDOR
 
 TEMA 3
+
+alt IIIIIIIII 9
+braz IIIIII 6
+gyra IIIIIII 8S

@@ -1,0 +1,22 @@
+## Procesos de la Ciencia de Datos:
+1. Definir el problema.
+2. Obtener y preparar los datos.
+3. Explorar y analizar: Descubrir patrones y visualizar.
+4. Modelar y evaluar: Usar algoritmos Machine Learning y evaluar.
+5. Comunicar e implementar.
+
+Fases del proceso de visualización
+
+1. Definir el propósito
+2. Seleccionar el tipo de gráfico
+3. Preparar los datos
+4. Diseñar la visualización
+5. Interpretar resultados
+
+Principios de diseño visual
+
+1. Claridad, evita sobrecargar el gráfico
+2. Precisión, usa escalas proporcionales
+3. Consistencia, mantener el estilo visual en el informe
+4. Énfasis, resaltar lo importante
+5. Sencillez, comprensible sin tener que leer código

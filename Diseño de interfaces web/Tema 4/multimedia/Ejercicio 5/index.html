@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_5</title>
+  </head>
+  <body>
+    <video id="medio" width="600" height="300" style="border: 1px solid black">
+      <source src="../media/gatos.mp4" type="video/mp4" />
+    </video>
+    <nav>
+      <input type="button" id="reiniciar" value="reiniciar" />
+      <input type="button" id="retrasar" value="&laquo;" />
+      <input type="button" id="play" value="&#9658;" />
+      <input type="button" id="adelantar" value="&raquo;" />
+      <input type="button" id="silenciar" value="silenciar" />
+      <label>Volumen</label>
+      <input type="button" id="menosVolumen" value="-" />
+      <input type="button" id="masVolumen" value="+" />
+    </nav>
+    <script>
+      var video = document.getElementById("medio");
+      var botonplay = document.getElementById("play");
+      var botonadelantar = document.getElementById("adelantar");
+      var botonretrasar = document.getElementById("retrasar");
+      var botonmaxvol = document.getElementById("masVolumen");
+      var botonmenvol = document.getElementById("menosVolumen");
+      var botonreset = document.getElementById("reiniciar");
+
+      botonplay.addEventListener("click", function () {
+        video.play();
+      });
+
+      botonreset.addEventListener("click", function () {
+        video.pause();
+        video.currentTime = 0;
+        video.load();
+        video.play();
+      });
+
+      botonadelantar.addEventListener("click", function () {
+      });
+
+      botonretrasar.addEventListener("click", function () {
+      });
+
+      botonmaxvol.addEventListener("click", function () {
+      });
+
+      botonmenvol.addEventListener("click", function () {
+        video.volume = Math.max(0, video.volume - 0.5)
+      });
+
+      window.addEventListener("load", iniciar, false);
+    </script>
+  </body>
+</html>

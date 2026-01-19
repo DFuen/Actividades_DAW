@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Canvas</title>
+</head>
+<style>
+    canvas{
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px;
+        margin: 2%;
+    }
+</style>
+<body>
+    <canvas id="lienzo1" width="500" height="300"></canvas>
+    <script>
+        var hoja = document.getElementById("lienzo1");
+        var lienzo = hoja.getContext("2d");
+
+        lienzo.beginPath();
+        lienzo.fillStyle="#F8FF5A";
+        lienzo.moveTo(100, 0);
+        lienzo.lineTo(250,300);
+        lienzo.stroke();
+        lienzo.fill();
+
+        lienzo.beginPath();
+        lienzo.fillStyle="#F8FF5A";
+        lienzo.moveTo(400, 0);
+        lienzo.lineTo(250,300);
+        lienzo.stroke();
+        lienzo.fill();
+    </script>
+
+    <canvas id="lienzo2" width="500" height="300">
+        
+    </canvas>
+    <script>
+        var hoja = document.getElementById("lienzo2");
+        var lienzo = hoja.getContext("2d");
+
+        lienzo.lineWidth = 1;
+        lienzo.strokeStyle = "black";
+        lienzo.strokeRect (50,10,200,100)
+    </script>
+    
+    <canvas id="lienzo3" width="500" height="300"></canvas>
+    <script>
+        var hoja = document.getElementById("lienzo3");
+        var lienzo = hoja.getContext("2d");
+        lienzo.lineWidth = 5;
+
+        /*LINEAS VERTICALES*/
+        lienzo.beginPath();
+        lienzo.strokeStyle="#FF0000";
+        lienzo.moveTo(10, 0);
+        lienzo.lineTo(10,300);
+        lienzo.stroke();
+        lienzo.fill();
+
+        lienzo.beginPath();
+        lienzo.strokeStyle="#00CC11";
+        lienzo.moveTo(20, 0);
+       
+        lienzo.stroke();
+        lienzo.fill();
+
+        lienzo.beginPath();
+        lienzo.strokeStyle="#00CC11";
+        lienzo.moveTo(30, 0);
+        lienzo.lineTo(30,300);
+        lienzo.stroke();
+        lienzo.fill();
+
+        lienzo.beginPath();
+        lienzo.strokeStyle="#00CC11";
+        lienzo.moveTo(40, 0);
+        lienzo.lineTo(40,300);
+        lienzo.stroke();
+        lienzo.fill();
+
+        /*^*/
+        lienzo.beginPath();
+        lienzo.strokeStyle="#000C70";
+
+        lienzo.moveTo(50, 100);
+        lienzo.lineTo(100,0);
+
+        lienzo.moveTo(150, 100);
+        lienzo.lineTo(100,0);
+
+        lienzo.moveTo(50, 200);
+        lienzo.lineTo(100,100);
+
+        lienzo.moveTo(150, 200);
+        lienzo.lineTo(100,100);
+
+        lienzo.moveTo(50, 300);
+        lienzo.lineTo(100,200);
+
+        lienzo.moveTo(150, 300);
+        lienzo.lineTo(100,200);
+
+        lienzo.stroke();
+        lienzo.fill();
+    </script>
+
+    <canvas id="lienzo4" width="500" height="300"></canvas>
+    <script>
+        var hoja = document.getElementById("lienzo4");
+        var lienzo = hoja.getContext("2d");
+
+        /*CUADRADO ROJO*/
+        lienzo.fillStyle="#FF0000"
+        lienzo.fillRect(100,0,300,300);
+        lienzo.stroke();
+        lienzo.fill();
+
+        /*CUADRADOS BLANCOS*/
+        lienzo.fillStyle="white"
+        lienzo.fillRect(110,10,20,20);
+        lienzo.fillRect(240,140,20,20);
+        lienzo.fillRect(370,270,20,20);
+        lienzo.stroke();
+        lienzo.fill();
+    </script>
+
+    <canvas id="lienzo5" width="500" height="300"></canvas>
+    <script>
+        var hoja = document.getElementById("lienzo5");
+        var lienzo = hoja.getContext("2d");
+
+        /*CUADRADO ROJO*/
+        lienzo.beginPath();
+        lienzo.arc(150, 150, 0, 2*Math.PI)
+        lienzo.lineWidth = 2;
+        lienzo.strokeStyle="#FF0000";
+
+        lienzo.stroke();
+        lienzo.fill();
+
+    </script>
+</body>
+</html>

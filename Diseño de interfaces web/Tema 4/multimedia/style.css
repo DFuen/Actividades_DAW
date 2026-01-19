@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#videos, #musica{
+    display:grid;
+    grid-template-columns: auto auto;
+    margin: 5%;
+}
+#videos video{
+    border: 1px solid black;
+}
+#videos h5{
+    margin-left: 3%;
+    text-shadow: 0.5px 0.5px 1px blue;
+}

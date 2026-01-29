@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-textos.css">
     <!--INSERCIÓN DE TEXTOS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,30 +14,30 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="/pag/inicio.html" target="content-wb"><img src="assets/logo-icon.png"></a>
+            <a href="pag/inicio.html" aria-label="Logo" target="content-wb"><img alt="Logo asociacion" src="assets/logo-icon.png"></a>
         </div>
         <div class="menu">
-            <div class="item-menu"><a href="pag/servicios.html" target="content-wb"><h3>SERVICIOS</h3></a></div>
-            <div class="item-menu"><h3>GALEARIA</h3>
+            <div class="relleno"></div>
+            <div class="item-menu"><a href="pag/servicios.html" target="content-wb"><h3>SERVICIOS</h3></a>
                 <div class="sub-item-content">
-                    <a class="sub-item" href="#">nombre</a>
-                    <a class="sub-item" href="#">nombre</a>
-                </div>
-            </div> 
-            <div class="item-menu"><h3>NOTIFICACIONES</h3>
-                <div class="sub-item-content">
-                    <a class="sub-item" href="#">nombre</a>
-                    <a class="sub-item" href="#">nombre</a>
+                    <a class="sub-item" href="#"><h4>Areas y Camping</h4></a>
+                    <a class="sub-item" href="#"><h4>Asociaciones</h4></a>
                 </div>
             </div>
+            <div class="item-menu"><a href="pag/galeria.html" target="content-wb"><h3>GALERIA</h3></a>
+                <div class="sub-item-content">
+                    <a class="sub-item" href="pag/fotos-2025.html" target="content-wb"><h4>Jimena 2025</h4></a>
+                </div>
+            </div>
+            <div class="item-menu"><a href="pag/eventos.html" target="content-wb"><h3>EVENTOS</h3></a></div>
             <div class="item-menu"><h3>CONTACTO</h3></div>
         </div>
     </nav>
     <main>
-        <iframe class="content" name="content-wb" src="pag/inicio.html"></iframe>
+        <iframe class="content" aria-label="content" name="content-wb" src="pag/inicio.html"></iframe>
     </main>
     <footer>
-        <p>© 2025 Asociación de Caravanas. Todos los derechos reservados</p>
+        <h6>© 2025 Asociación de Caravanas. Todos los derechos reservados</h6>
     </footer>
 </body>
 </html>

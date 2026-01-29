@@ -1,0 +1,49 @@
+/*ESTRUCTURA PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.content-web{
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    padding-bottom: 6%;
+}
+.evento-container{
+    border: 1px solid black;
+    box-shadow: 2px 3px 5px black;
+    margin: 1% 5% 0 5%;
+
+}
+.evento-header,.evento-info,.evento-programa{
+    width: 70%;
+    margin: 1%;
+    margin-left: 3%;
+}
+.nota{
+    text-align: center;
+    margin: 1%;
+}
+.programa-dia li{
+    list-style: none;
+}
+.registro{
+    margin-top: 1%;
+    width: 80%;
+
+}
+.boton{
+    text-align: center;
+    align-content: center;
+    background-color: #82A91B;
+    border: 2px solid #000;
+    color: #FFFF;
+    height: 50px;
+    font-size: 25px;
+}
+.boton:hover{
+    background-color: #90a752;
+    border: 3px solid white;
+}
+
+

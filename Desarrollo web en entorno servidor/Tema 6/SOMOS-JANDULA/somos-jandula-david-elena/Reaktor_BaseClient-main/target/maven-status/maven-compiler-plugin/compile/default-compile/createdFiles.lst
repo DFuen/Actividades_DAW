@@ -1,0 +1,11 @@
+es\iesjandula\reaktor\base_client\utils\BaseClientConstants.class
+es\iesjandula\reaktor\base_client\utils\BaseClientException.class
+es\iesjandula\reaktor\base_client\dtos\NotificationWebDto.class
+es\iesjandula\reaktor\base_client\requests\firebase\RequestFirebaseObtenerUsuarios$1.class
+es\iesjandula\reaktor\base_client\requests\notificaciones\RequestNotificacionesEnviarEmail.class
+es\iesjandula\reaktor\base_client\security\service\SessionStorageService.class
+es\iesjandula\reaktor\base_client\requests\firebase\RequestFirebaseObtenerUsuarios.class
+es\iesjandula\reaktor\base_client\dtos\NotificationEmailDto.class
+es\iesjandula\reaktor\base_client\requests\notificaciones\RequestNotificacionesEnviarWeb.class
+es\iesjandula\reaktor\base_client\security\service\AuthorizationService.class
+es\iesjandula\reaktor\base_client\requests\printers\RequestImpresion.class

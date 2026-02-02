@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "Reaktor_BaseClient-main"
+		},
+		{
+			"path": "Reaktor_Base-main"
+		},
+		{
+			"path": "Reaktor_BaseServer-main"
+		},
+		{
+			"path": "Reaktor_Dependencies-main"
+		},
+		{
+			"path": "Reaktor_FirebaseServer-main"
+		},
+		{
+			"path": "Reaktor_Redes-main"
+		},
+		{
+			"path": "somosjandula-main"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

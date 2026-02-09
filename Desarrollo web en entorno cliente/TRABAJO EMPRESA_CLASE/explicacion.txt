@@ -1,0 +1,15 @@
+"parts.json" (Esto engloba todas las partes que pueden tener los robots)
+
+Dia 02 y adelantamos Día 03 / Día05 "calculations.ts" (Lo cambiamos al hacer el proyecto en typeScript) Aquí controlamos todos los cambios y cálculos de los robots (estadísticas, cuanto ataca el robot enemigo,etc)
+
+"robotService.ts" Contiene:
+
+getParts() - Obtiene la lista de piezas desde parts.json
+
+getPartsByCategory(category) - Filtra piezas por categoría
+
+saveRobot(robot) - Guarda robot en localStorage
+
+loadRobot() - Carga robot desde localStorage
+
+deleteRobot() - Elimina el robot guardado

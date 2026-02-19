@@ -1,0 +1,232 @@
+================================================================================
+EJEMPLOS DE REQUESTS JSON PARA LOS ENDPOINTS
+================================================================================
+
+================================================================================
+ENDPOINTS DE ARTÍCULOS (/api/articulos)
+================================================================================
+
+1. GET /api/articulos
+   - Obtener todos los artículos
+   - Método: GET
+   - Body: No requiere
+
+2. GET /api/articulos/{id}
+   - Obtener artículo por número de serie
+   - Método: GET
+   - Path: /api/articulos/LAPTOP001
+   - Body: No requiere
+
+3. POST /api/articulos
+   - Crear nuevo artículo
+   - Método: POST
+   - Body:
+{
+  "numeroSerie": "MONITOR002",
+  "nombreProducto": "Monitor ASUS 32 pulgadas",
+  "precioVenta": 599.99,
+  "stockDisponible": 5
+}
+
+4. PUT /api/articulos/{id}
+   - Actualizar artículo existente
+   - Método: PUT
+   - Path: /api/articulos/MONITOR002
+   - Body:
+{
+  "nombreProducto": "Monitor ASUS 32 pulgadas 144Hz",
+  "precioVenta": 649.99,
+  "stockDisponible": 8
+}
+
+5. DELETE /api/articulos/{id}
+   - Eliminar artículo
+   - Método: DELETE
+   - Path: /api/articulos/MONITOR002
+   - Body: No requiere
+
+6. GET /api/articulos/buscar/sin-stock
+   - Buscar todos los artículos sin stock (stock = 0)
+   - Método: GET
+   - Body: No requiere
+
+7. GET /api/articulos/buscar/por-precio?maxPrecio={precio}
+   - Buscar artículos que cuesten menos de un precio especificado
+   - Método: GET
+   - Path: /api/articulos/buscar/por-precio?maxPrecio=100.00
+   - Body: No requiere
+
+8. GET /api/articulos/buscar/por-nombre?palabra={palabra}
+   - Buscar artículos cuyo nombre contenga una palabra
+   - Método: GET
+   - Path: /api/articulos/buscar/por-nombre?palabra=laptop
+   - Body: No requiere
+
+9. GET /api/articulos/ordenados-por-precio
+   - Listar todos los artículos ordenados por precio (ascendente)
+   - Método: GET
+   - Body: No requiere
+
+10. GET /api/articulos/top-5-baratos
+    - Obtener los 5 artículos más baratos
+    - Método: GET
+    - Body: No requiere
+
+================================================================================
+ENDPOINTS DE CLIENTES (/api/clientes)
+================================================================================
+
+1. GET /api/clientes
+   - Obtener todos los clientes
+   - Método: GET
+   - Body: No requiere
+
+2. GET /api/clientes/{dni}
+   - Obtener cliente por DNI
+   - Método: GET
+   - Path: /api/clientes/12345678A
+   - Body: No requiere
+
+3. POST /api/clientes
+   - Crear nuevo cliente
+   - Método: POST
+   - Body:
+{
+  "dni": "66778899F",
+  "nombre": "Laura",
+  "apellidos": "Jiménez Díaz",
+  "correo": "laura.jimenez@example.com",
+  "direccion": "Calle Nueva 999, Málaga"
+}
+
+4. PUT /api/clientes/{dni}
+   - Actualizar cliente existente
+   - Método: PUT
+   - Path: /api/clientes/66778899F
+   - Body:
+{
+  "nombre": "Laura",
+  "apellidos": "Jiménez López",
+  "correo": "laura.jimenez2@example.com",
+  "direccion": "Avenida Nueva 888, Málaga"
+}
+
+5. DELETE /api/clientes/{dni}
+   - Eliminar cliente
+   - Método: DELETE
+   - Path: /api/clientes/66778899F
+   - Body: No requiere
+
+6. GET /api/clientes/buscar/por-correo?correo={email}
+   - Buscar cliente por correo exacto
+   - Método: GET
+   - Path: /api/clientes/buscar/por-correo?correo=juan.garcia@example.com
+   - Body: No requiere
+
+7. GET /api/clientes/buscar/por-apellido?apellido={apellido}
+   - Buscar clientes por apellido
+   - Método: GET
+   - Path: /api/clientes/buscar/por-apellido?apellido=García López
+   - Body: No requiere
+
+8. GET /api/clientes/existe/{dni}
+   - Verificar si existe un cliente con un DNI específico
+   - Método: GET
+   - Path: /api/clientes/existe/12345678A
+   - Body: No requiere
+
+================================================================================
+ENDPOINTS DE PEDIDOS (/api/pedidos)
+================================================================================
+
+1. GET /api/pedidos
+   - Obtener todos los pedidos
+   - Método: GET
+   - Body: No requiere
+
+2. GET /api/pedidos/{id}
+   - Obtener pedido por ID
+   - Método: GET
+   - Path: /api/pedidos/1
+   - Body: No requiere
+
+3. POST /api/pedidos
+   - Crear nuevo pedido
+   - Método: POST
+   - Body:
+{
+  "fechaPedido": "2024-01-25T15:30:00",
+  "estado": "PENDIENTE",
+  "cliente": {
+    "dni": "12345678A"
+  },
+  "articulos": [
+    {
+      "numeroSerie": "LAPTOP001"
+    },
+    {
+      "numeroSerie": "MOUSE001"
+    }
+  ]
+}
+
+4. PUT /api/pedidos/{id}
+   - Actualizar estado de pedido existente
+   - Método: PUT
+   - Path: /api/pedidos/1
+   - Body:
+{
+  "estado": "ENVIADO"
+}
+
+5. DELETE /api/pedidos/{id}
+   - Eliminar pedido
+   - Método: DELETE
+   - Path: /api/pedidos/1
+   - Body: No requiere
+
+6. GET /api/pedidos/buscar/por-estado?estado={estado}
+   - Buscar pedidos por estado (PENDIENTE, ENVIADO, CANCELADO)
+   - Método: GET
+   - Path: /api/pedidos/buscar/por-estado?estado=PENDIENTE
+   - Body: No requiere
+
+7. GET /api/pedidos/buscar/por-fecha?fecha={fecha}
+   - Buscar pedidos realizados en una fecha específica
+   - Método: GET
+   - Path: /api/pedidos/buscar/por-fecha?fecha=2024-01-18
+   - Body: No requiere
+
+8. GET /api/pedidos/ultimo
+   - Obtener el último pedido realizado (más reciente)
+   - Método: GET
+   - Body: No requiere
+
+================================================================================
+NOTAS IMPORTANTES
+================================================================================
+
+1. DNI válidos:
+   - Deben tener exactamente 9 caracteres: 8 números + 1 letra mayúscula
+   - Formato: 12345678A
+
+2. Correos:
+   - Deben ser correos válidos en formato estándar
+
+3. Estados de pedidos válidos:
+   - PENDIENTE
+   - ENVIADO
+   - CANCELADO
+
+4. Precios:
+   - Máximo 10 dígitos enteros y 2 decimales
+   - Deben ser >= 0
+
+5. Stock:
+   - Deben ser números enteros >= 0
+
+6. Fechas:
+   - Formato: YYYY-MM-DDTHH:mm:ss (ISO 8601)
+   - No pueden ser fechas futuras (solo presente o pasado)
+
+================================================================================

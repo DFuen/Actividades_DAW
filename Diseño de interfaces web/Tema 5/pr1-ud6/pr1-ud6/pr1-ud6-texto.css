@@ -1,0 +1,36 @@
+body {
+  background-color: #FFFFFF;
+  color: #212121;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+p {
+  margin-bottom: 10px;
+}
+.content-box {
+  background-color: #999999;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 20px 0;
+}
+a {
+  color: #0000ff;
+}

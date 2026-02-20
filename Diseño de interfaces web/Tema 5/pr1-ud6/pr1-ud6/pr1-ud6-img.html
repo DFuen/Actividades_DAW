@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usabilidad en las imágenes</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .image-container {
+      margin: 20px 0;
+    }
+    .image-container img {
+      width: 300px;
+      height: auto;
+    }
+    .background-image {
+      background-image: url('https://www.eniun.com/wp-content/uploads/Tutorial-Usabilidad-1-900x450.png');
+      background-size: cover;
+      height: 300px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Usabilidad en las imágenes</h1>
+  <p>Imagen no optimizada para la web y sin etiqueta alt descriptiva:</p>
+  <div class="image-container">
+    <img src="https://www.eniun.com/wp-content/uploads/Curso-Visual-Studio-Code.png" alt="">
+  </div>
+  <p>Texto y fondo con poco contraste:</p>
+  <div class="background-image">
+    <p>Texto sobre una imagen de fondo que es difícil de leer.</p>
+  </div>
+</body>
+</html>

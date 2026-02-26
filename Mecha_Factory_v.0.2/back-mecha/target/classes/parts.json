@@ -1,0 +1,82 @@
+[
+  {
+    "id": "head_basic",
+    "name": "Basic Head",
+    "category": "head",
+    "rarity": "common",
+    "cost": 50,
+    "stats": { "health": 15, "attack": 5, "speed": 5 },
+    "color": "#808080",
+    "description": "Una cabeza robótica estándar."
+  },
+  {
+    "id": "head_armored",
+    "name": "Armored Head",
+    "category": "head",
+    "rarity": "uncommon",
+    "cost": 100,
+    "stats": { "health": 30, "attack": 3, "speed": 2 },
+    "color": "#404040",
+    "description": "Cabeza reforzada con blindaje adicional."
+  },
+  {
+    "id": "head_tactical",
+    "name": "Tactical Head",
+    "category": "head",
+    "rarity": "rare",
+    "cost": 150,
+    "stats": { "health": 23, "attack": 10, "speed": 8 },
+    "color": "#2E8B57",
+    "description": "Sistema táctico avanzado para mejor desempeño."
+  },
+  {
+    "id": "body_light",
+    "name": "Light Frame",
+    "category": "body",
+    "rarity": "common",
+    "cost": 75,
+    "stats": { "health": 23, "attack": 8, "speed": 10 },
+    "color": "#B0C4DE",
+    "description": "Marco ligero que prioriza velocidad."
+  },
+  {
+    "id": "limbs_basic",
+    "name": "Basic Limbs",
+    "category": "limbs",
+    "rarity": "common",
+    "cost": 60,
+    "stats": { "health": 10, "attack": 7, "speed": 12 },
+    "color": "#A0522D",
+    "description": "Extremidades estándar para movilidad básica."
+  },
+  {
+    "id": "limbs_hydraulic",
+    "name": "Hydraulic Limbs",
+    "category": "limbs",
+    "rarity": "rare",
+    "cost": 120,
+    "stats": { "health": 18, "attack": 15, "speed": 18 },
+    "color": "#4682B4",
+    "description": "Extremidades hidráulicas para fuerza extra."
+  },
+  {
+    "id": "weapon_laser",
+    "name": "Laser Cannon",
+    "category": "weapon",
+    "rarity": "epic",
+    "cost": 200,
+    "stats": { "health": 0, "attack": 30, "speed": 5 },
+    "color": "#FF4500",
+    "description": "Arma láser de alta potencia."
+  },
+  {
+    "id": "weapon_blade",
+    "name": "Titanium Blade",
+    "category": "weapon",
+    "rarity": "uncommon",
+    "cost": 90,
+    "stats": { "health": 0, "attack": 18, "speed": 10 },
+    "color": "#C0C0C0",
+    "description": "Hoja de titanio para combate cuerpo a cuerpo."
+  }
+]

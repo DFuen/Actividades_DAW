@@ -1,0 +1,202 @@
+[
+  {
+    "id": "head_basic",
+    "name": "Basic Head",
+    "category": "head",
+    "rarity": "common",
+    "cost": 50,
+    "stats": { "health": 22.5, "attack": 1.06, "speed": 5 },
+    "color": "#808080",
+    "description": "Una cabeza robótica estándar."
+  },
+  {
+    "id": "head_armored",
+    "name": "Armored Head",
+    "category": "head",
+    "rarity": "uncommon",
+    "cost": 100,
+    "stats": { "health": 45, "attack": 0.64, "speed": 2 },
+    "color": "#404040",
+    "description": "Cabeza reforzada con blindaje adicional."
+  },
+  {
+    "id": "head_tactical",
+    "name": "Tactical Head",
+    "category": "head",
+    "rarity": "rare",
+    "cost": 150,
+    "stats": { "health": 34.5, "attack": 2.11, "speed": 8 },
+    "color": "#2E8B57",
+    "description": "Sistema táctico avanzado para mejor desempeño."
+  },
+  {
+    "id": "body_light",
+    "name": "Light Frame",
+    "category": "body",
+    "rarity": "common",
+    "cost": 75,
+    "stats": { "health": 34.5, "attack": 1.69, "speed": 10 },
+    "color": "#B0C4DE",
+    "description": "Marco ligero que prioriza velocidad."
+  },
+  {
+    "id": "body_standard",
+    "name": "Standard Chassis",
+    "category": "body",
+    "rarity": "uncommon",
+    "cost": 125,
+    "stats": { "health": 57, "attack": 2.11, "speed": 5 },
+    "color": "#A9A9A9",
+    "description": "Chasis balanceado para todos los roles."
+  },
+  {
+    "id": "body_heavy",
+    "name": "Heavy Armor",
+    "category": "body",
+    "rarity": "rare",
+    "cost": 200,
+    "stats": { "health": 90, "attack": 1.06, "speed": 2 },
+    "color": "#1C1C1C",
+    "description": "Blindaje pesado para máxima defensa."
+  },
+  {
+    "id": "limbs_agile",
+    "name": "Agile Limbs",
+    "category": "limbs",
+    "rarity": "uncommon",
+    "cost": 100,
+    "stats": { "health": 12, "attack": 1.06, "speed": 12 },
+    "color": "#FFD700",
+    "description": "Extremidades ágiles para movimiento rápido."
+  },
+  {
+    "id": "limbs_standard",
+    "name": "Standard Limbs",
+    "category": "limbs",
+    "rarity": "common",
+    "cost": 60,
+    "stats": { "health": 22.5, "attack": 1.69, "speed": 6 },
+    "color": "#C0C0C0",
+    "description": "Extremidades estándar de propósito general."
+  },
+  {
+    "id": "limbs_powerful",
+    "name": "Powered Limbs",
+    "category": "limbs",
+    "rarity": "rare",
+    "cost": 180,
+    "stats": { "health": 34.5, "attack": 3.80, "speed": 4 },
+    "color": "#FF6347",
+    "description": "Extremidades potentes con gran fuerza."
+  },
+  {
+    "id": "weapon_laser",
+    "name": "Laser Cannon",
+    "category": "weapon",
+    "rarity": "rare",
+    "cost": 200,
+    "stats": { "health": 0, "attack": 4.22, "speed": 0 },
+    "color": "#FF0000",
+    "description": "Cañón láser de alta energía."
+  },
+  {
+    "id": "weapon_plasma",
+    "name": "Plasma Rifle",
+    "category": "weapon",
+    "rarity": "epic",
+    "cost": 300,
+    "stats": { "health": 12, "attack": 5.28, "speed": -2 },
+    "color": "#00FF00",
+    "description": "Rifle de plasma experimental de fuerte impacto."
+  },
+  {
+    "id": "weapon_missile",
+    "name": "Missile Launcher",
+    "category": "weapon",
+    "rarity": "uncommon",
+    "cost": 120,
+    "stats": { "health": 0, "attack": 3.17, "speed": 2 },
+    "color": "#FFD700",
+    "description": "Lanzador de misiles de propósito general."
+  },
+  {
+    "id": "head_legendary",
+    "name": "Quantum Brain",
+    "category": "head",
+    "rarity": "legendary",
+    "cost": 500,
+    "stats": { "health": 112.5, "attack": 5.28, "speed": 15 },
+    "color": "#FF00FF",
+    "description": "Procesador cuántico avanzado con IA superinteligente."
+  },
+  {
+    "id": "body_legendary",
+    "name": "Titanium Core",
+    "category": "body",
+    "rarity": "legendary",
+    "cost": 750,
+    "stats": { "health": 180, "attack": 6.33, "speed": 5 },
+    "color": "#00FFFF",
+    "description": "Núcleo de titanio indestructible con escudo energético."
+  },
+  {
+    "id": "limbs_legendary",
+    "name": "Hypersonic Servos",
+    "category": "limbs",
+    "rarity": "legendary",
+    "cost": 600,
+    "stats": { "health": 45, "attack": 7.39, "speed": 20 },
+    "color": "#00FF00",
+    "description": "Servos hipersónicos que permiten velocidad y potencia extremas."
+  },
+  {
+    "id": "weapon_godblaster",
+    "name": "God Blaster",
+    "category": "weapon",
+    "rarity": "legendary",
+    "cost": 1000,
+    "stats": { "health": 22.5, "attack": 10.55, "speed": 5 },
+    "color": "#FFFF00",
+    "description": "Arma divina capaz de infligir daño devastador. ¡Poder absoluto!"
+  },
+  {
+    "id": "head_nexus",
+    "name": "Nexus Core",
+    "category": "head",
+    "rarity": "epic",
+    "cost": 350,
+    "stats": { "health": 67.5, "attack": 3.80, "speed": 12 },
+    "color": "#9B59B6",
+    "description": "Centro de control multidimensional."
+  },
+  {
+    "id": "body_quantum",
+    "name": "Quantum Shield",
+    "category": "body",
+    "rarity": "epic",
+    "cost": 400,
+    "stats": { "health": 112.5, "attack": 3.17, "speed": 3 },
+    "color": "#3498DB",
+    "description": "Escudo cuántico que absorbe energía."
+  },
+  {
+    "id": "limbs_overdrive",
+    "name": "Overdrive Legs",
+    "category": "limbs",
+    "rarity": "epic",
+    "cost": 300,
+    "stats": { "health": 34.5, "attack": 3.17, "speed": 18 },
+    "color": "#E74C3C",
+    "description": "Piernas turbo que multiplican la velocidad."
+  },
+  {
+    "id": "weapon_photon",
+    "name": "Photon Cannon",
+    "category": "weapon",
+    "rarity": "epic",
+    "cost": 450,
+    "stats": { "health": 12, "attack": 7.39, "speed": 3 },
+    "color": "#F39C12",
+    "description": "Cañón de fotones con recarga ultrarrápida."
+  }
+]

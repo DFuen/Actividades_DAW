@@ -1,0 +1,8 @@
+{
+  "name": "Furia",
+  "description": "Añade +25 ataque al robot y +25 de defensa",
+  "effects": {
+    "attack": 25,
+    "defense": 25
+  }
+}

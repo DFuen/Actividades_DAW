@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Furia",
+    "description": "Añade +25 ataque al robot y +25 de defensa",
+    "effects": {
+      "attack": 25,
+      "defense": 25
+    },
+    "image": "furia.png"
+  },
+  {
+    "name": "Noqueo",
+    "description": "+10 ataque y -2 de defensa",
+    "effects": {
+      "attack": 10,
+      "defense": -2
+    },
+    "image": "noqueo.png"
+  },
+  {
+    "name": "Rotura",
+    "description": "Elimina una parte del robot que saca la carta",
+    "effects": {
+      "removePart": true
+    },
+    "image": "rotura.png"
+  }
+]
